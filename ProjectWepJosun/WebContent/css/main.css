@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:normal;
+}
+
+/*body*/
+body.over{overflow:hidden !important;}
+
+/*header*/
+.header{position: fixed; left: 0; right: 0; top: 0; z-index: 100; height: 100px; transition: all 0.1s;}
+.mainWrapper .header{background:transparent}
+.mainWrapper .header .headArea{background:transparent}
+.mainWrapper .header .logo{left:50%;top:20px;margin-left:-175px;width:350px;height:60px;background:url(../img/btn_icon/main_logo.png) no-repeat 0 0;}
+.mainWrapper .header .logo a{width:350px;height:60px}
+.mainWrapper .header .btnMenu{background-position:0 0}
+.mainWrapper .header.gnbOn{background:#fff}
+.mainWrapper .header.gnbOn .btnMenu, .mainWrapper .header.type02 .btnMenu{background-position:-35px 0}
+.mainWrapper .header.gnbOn .logo, .mainWrapper .header.type02 .logo{background-position:0 -60px}
+
+.mainWrapper .gnbUtil > ul > li > a{color:#fff}
+.mainWrapper .gnbUtil .dropdown_list .dropdown_value input[type="text"]{color:#fff}
+.mainWrapper .gnbUtil .dropdown_list .dropdown_value .btn_opener:after{background:url(../../../images/ko/pc/common/ico_dropdown_white_8x4.png) no-repeat}
+.mainWrapper .gnbUtil .dropdown_list.active .dropdown_value .btn_opener:after{background-position:-8px 0}
+.mainWrapper .gnbUtil > ul > li .hotelFind:after{background: url(../../../images/ko/pc/common/ico_search_white_11x11.png) no-repeat 0 0;}
+.mainWrapper .gnbUtil .dropdown_list .item_list{background:#fff;border-color:#fff}
+.mainWrapper .gnbUtil .dropdown_list .item_list a{color:#000}
+.mainWrapper .gnbUtil .dropdown_list .item_list a:hover{color:#bbb}
+
+.mainWrapper .header.gnbOn .gnbUtil .dropdown_list .item_list a{color:#000}
+.mainWrapper .container{padding-top:0;overflow:hidden}
+.mainWrapper .inner{padding:0}
+
+.mainWrapper .header.type02{background:#fff}
+
+.header .btnMenu{display:block;position:absolute;left:50px;top:30px;z-index:1;text-indent:-9999px;overflow:hidden;width:35px;height:35px;margin:0 auto;background:url(../img/btn_icon/btn_menu.png) no-repeat -35px 0;transition:.5s}
+.header .btnMenu.menuOn{transform: translateY(0) rotate(45deg)}
+.header .logo{display:block;position:absolute;left:110px;top:37px;z-index:1;text-indent:-9999px;overflow:hidden;width:350px;height:24px;background:url(../../../images/ko/pc/common/bg_logo_shinsegae02.png) no-repeat 0 0}
+.header .logo a{display:block;width:350px;height:24px}
+.header .headArea{position:relative;background:transparent;padding:0 50px;height:100px;background:#fff}
+.header .headArea:after{display:none}
+
+.header.gnbOn{background:#fff;z-index:999997}
+.header.gnbOn .btnMenu .btnMenu{background-position:-35px 0 !important}
+.header.gnbOn .gnbUtil > ul > li > a, .header.type02 .gnbUtil > ul > li > a{color:#000}
+.header.gnbOn .gnbUtil .dropdown_list .dropdown_value input[type="text"], .header.type02 .gnbUtil .dropdown_list .dropdown_value input[type="text"]{color:#000}
+.header.gnbOn .gnbUtil .dropdown_list .dropdown_value .btn_opener:after, .header.type02 .gnbUtil .dropdown_list .dropdown_value .btn_opener:after{background:url(../../../images/ko/pc/common/ico_dropdown_black_8x4.png) no-repeat}
+.header.gnbOn .gnbUtil .dropdown_list.active .dropdown_value .btn_opener:after, .header.type02 .gnbUtil .dropdown_list.active .dropdown_value .btn_opener:after{background-position:-8px 0}
+.header.gnbOn .gnbUtil > ul > li .hotelFind:after, .header.type02 .gnbUtil > ul > li .hotelFind:after{background: url(../../../images/ko/pc/common/ico_search_black_11x11.png) no-repeat 0 0}
+.header.gnbOn .gnbUtil > .btnSC, .header.type02 .gnbUtil > .btnSC{color:#000;border-color:#000}
+.header.gnbOn .gnbUtil .dropdown_list .item_list{background:#000;border-color:#000}
+
+.gnbUtil{position:absolute;right:50px;top:30px}
+.gnbUtil > ul{display:inline-block;vertical-align:middle;margin-top:-6px}
+.gnbUtil > ul > li{display:inline-block;vertical-align:middle;margin-left:20px}
+.gnbUtil > ul > li:first-child{margin-left:0}
+.gnbUtil > ul > li > a{color:#000;font:400 14px notokrL}
+
+/*서브메뉴*/
+.allMenu{display:none; position:absolute;left:0;top:100px;background:#111;width:100%;height:100vh;}
+.allMenu > .inner{position:relative;padding:100px 0 0 !important; display:flex; justify-content:center;}
+.allMenu > .inner .btnClose{overflow:hidden;text-indent:-9999px;position:absolute;top:13px;right:13px;width:50px;height:50px;background:url(../../../images/ko/pc/common/btn_close_white_25x25.png) no-repeat 50% 50%;z-index:999}
+
+.menuDepth01 > li{float:left;width:176px;font:400 15px gothamM;color:#989442;text-transform:uppercase;margin-left:28px}
+.menuDepth01 > li:first-child{margin-left:0}
+.menuDepth01 > li > .menuDepth02{padding-top:40px}
+.menuDepth01 > li > .menuDepth02 > li{font:500 18px gothamM, notokrR;color:#fff;padding-top:30px}
+.menuDepth01 > li > .menuDepth02 > li:first-child{padding-top:0}
+.menuDepth01 > li > .menuDepth02 > li > .menuDepth03 > li{margin-top:14px}
+.menuDepth01 > li > .menuDepth02 > li > .menuDepth03 > li > a{font:400 15px gothamL, notokrL;color:#999}
+
+/*mainArea01*/
+.mainArea01{width:100%; height:100%; overflow:hidden;}
+.mainArea01 .contents .mainTxt strong{display: block; color: #fff; font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:400; position: absolute; top: 58%; left: 50%; transform: translate(-50%, -100%); width: 100%; text-align: center;}
+.mainArea01 .contents .mainTxt strong span{font-size: 50px; display: block; line-height: 1.5; margin-top: 40px; font-family: 'Playfair Display SC', serif;}
+
+/*mainArea02*/
+.mainArea02{width:100%; height:100%; overflow:hidden;}
+.mainArea02 .contents{height:100%;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox{position: absolute;top: 50%;left:50%;transform: translate(-50%, -50%);width: 1162px;background: #fff;height: 600px;padding: 77px 70px 0; text-align: center;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .tit{display:block;font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:400; line-height:1;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .sTit{display:block; font-size:22px; font-weight:400; margin-top:15px;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList{margin: 25px -22px 0;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li{position: relative; margin: 45px 10px 0; display: inline-block; width: 180px;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li a{display: block; height: 96px; text-indent: -99999px; overflow: hidden; opacity: .45;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li a:hover{opacity: 1;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li a:before{display:block; width: 180px; height: 96px; content:"";}
+
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(1) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo09.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(2) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo01.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(3) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo03.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(4) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo02.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(5) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo07.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(6) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo05.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(7) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo08.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(8) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo04.png) center no-repeat;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .hList li:nth-child(9) a:before{background: url(../img/01.main/02.main_HOTELS/img_homebox_logo06.png) center no-repeat;}
+
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .txt01{font-size: 25px; margin-top: 30px;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .txt02{font-size: 20px;font-weight:300; margin: 3px 0 40px;}
+.mainArea02 .contents .swiper-wrapper .swiper-slide .homeBox .cont .btnSC{display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em; font-weight:300;}
+
+.mainArea02 .mySwiper .swiper-button-next:after, .mainArea02 .mySwiper .swiper-button-prev:after{display:none;}
+.mainArea02 .mySwiper .swiper-button-next.swiper-button-disabled, .mainArea02 .mySwiper .swiper-button-prev.swiper-button-disabled{opacity:0;}
+.mainArea02 .mySwiper .swiper-button-next{top: 50%; margin-top: -33px; width: 66px;height: 66px; background: url(../img/btn_icon/btn_swipe_66x66.png) no-repeat; right:250px; background-position: -66px 0; z-index: 2;}
+.mainArea02 .mySwiper .swiper-button-prev{
+	osition: absolute;
+    top: 50%;
+    margin-top: -33px;
+    width: 66px;
+    height: 66px;
+    left:250px;
+    background: url(../img/btn_icon/btn_swipe_66x66.png) no-repeat;
+    background-position: 0 0;
+    z-index: 2;
+}
+
+/*mainArea03*/
+.mainArea03{width:100%; height:100%; overflow:hidden; background: url(../img/01.main/03.main_MEMBERSHIP/03.main_MEMBERSHIP.jpg) no-repeat; position: relative;}
+.mainArea03 .inner{position: absolute;left: 0; top: 33px; width: 100%; background: #fff; height: 490px; text-align: center; opacity:0; transition: all 0.5s ease-out;}
+.mainArea03 .inner.moveDown{opacity:1;top:99px;}
+.mainArea03 .inner .titDep1{display: block; margin-top: 110px; font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:500;}
+.mainArea03 .inner .txt{font-size: 26px; margin: 15px 0 40px; font-weight:300;}
+
+/*mainArea05*/
+.mainArea05{width:100%; height:100%; overflow:hidden; background: url(../img/01.main/04.main_RETAILBUSINESS/1bg.jpg) no-repeat; transition: all 0.3s ease-out;}
+.mainArea05 .contBox{position: absolute; top: 50%; left: 50%; margin: -265px 0 0 -460px;}
+.mainArea05 .contBox .txtArea{text-align: center; color: #fff;}
+.mainArea05 .contBox .txtArea .titDep1{font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:400;}
+.mainArea05 .contBox .txtArea .txt{font-size:20px; margin: 25px 0 70px; font-weight:300;}
+
+.mainArea05 .contBox .obList{width: 919px;}
+.mainArea05 .contBox .obList ul{height: 280px; border-right: 1px solid rgba(255, 255, 255, .2);border-bottom: 1px solid rgba(255, 255, 255, .2);}
+.mainArea05 .contBox .obList ul li{float: left; width: 25%; height: 140px;border-left: 1px solid rgba(255, 255, 255, .2); border-top: 1px solid rgba(255, 255, 255, .2);}
+.mainArea05 .contBox .obList ul li.on{background: rgba(0, 0, 0, .3);}
+.mainArea05 .contBox .obList ul li img{display:block; margin:35px auto 0;}
+.mainArea05 .contBox .obList ul:after{content: ''; display: block; clear: both;}
+
+/*mainArea06*/
+.mainArea06{width:100%; height:100%; overflow:hidden; position: relative;}
+.mainArea06 .inner{position: absolute; top: 50%; left: 50%; width: 1160px; margin: -245px 0 0 -580px; text-align: center;}
+.mainArea06 .inner .titDep1{font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:500;}
+.mainArea06 .inner .brandList{border-top: 1px solid #ccc; padding-top: 40px; margin-top: 40px;}
+.mainArea06 .inner .brandList:after{content: ''; display: block; clear: both;}
+.mainArea06 .inner .brandList li{float: left; width: 160px; margin: 40px 0 0 40px;}
+.mainArea06 .brandList > li:nth-child(6n+1){margin-left: 0;}
+.mainArea06 .inner .brandList li img{}
+
+/*reservation*/
+#reservation:before{content:""; display:block; position:fixed; top:0; left:0; right:0; bottm:0; background:rgba(0,0,0,0.5);}
+#reservation{position: fixed; left: 50%; top:65%; width: 1200px; margin: 55px 0 0 -600px; z-index:10; transition:all 0.1s;}
+.revArea .selectRoom > div {position: relative; float: left; height: 64px;}
+.revArea .selectRoom .selectHotel {width: 380px;}
+.revArea .tit {position: absolute; left: 0; top: 0; font-size:16px; font-weight:400; color: #d0d0d0; letter-spacing: -1px; z-index:-1;}
+.revArea .selectRoom .selectHotel .hotelName, .revArea .selectRoom .chkInout .date {position: absolute; left: 0; bottom: 0; width: 100%; font-size: 22px; font-weight: 500; color: #fff; text-transform: uppercase;}
+
+.revArea .selectRoom .chkInout:before, .revArea .selectRoom > .roomWrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 1px;
+    height: 64px;
+    background: #fff;
+    opacity: .5;
+}
+
+/*날짜*/
+.revArea .selectRoom .chkInout {width: 380px;}
+.revArea .selectRoom .chkInout > a {display: block; height: 64px; padding: 0 30px;}
+
+/*캘린더*/
+/*#datepicker:before{display:block; position:fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.3); z-index:-1; content:"";}*/
+#datepicker{top: -570px !important; left: 50% !important; width: 1200px; background: #fff; height: 500px; padding: 50px 0; margin-left: -570px;}
+
+.ui-datepicker-inline{width:910px !important; margin:0 auto;}
+.ui-datepicker-inline:after{content: ''; display: block; clear: both;}
+.ui-datepicker-group{width:50%; float:left; position: relative;}
+.ui-datepicker-group-first{padding-right:30px;}
+.ui-datepicker-group-last{padding-left:30px;}
+
+.ui-state-disabled{opacity: .3;}
+.ui-datepicker-prev, .ui-datepicker-next{display: block; position: absolute; top: 13px; text-indent: -9999px; overflow: hidden; width: 12px; left: 0; background-position: 0 0;  height: 21px; background: url(../img/btn_icon/btn_swipe_12x21_black.png) no-repeat;}
+.ui-datepicker-next{right: 0; left:auto; background-position: -12px 0;}
+.ui-datepicker-title{font-size:26px; font-weight:500; margin-bottom:15px; text-align:center;}
+.ui-datepicker-calendar{width:100%; margin: 0 auto; padding: 0; border: 0; overflow: hidden;}
+.ui-datepicker-calendar th{width:40px; height:40px; font-size:18px; font-weight:500;}
+.ui-datepicker-week-end:first-child a,th.ui-datepicker-week-end:first-child span {color: #de3636;}
+.ui-datepicker-calendar td{width:50px; height:50px; line-height:50px; font-size:18px; text-align:center;}
+
+/*캘린더-셀렉트 날짜*/
+#datepicker .ui-datepicker-today a{display:block; background: #f0f0f0; border-radius: 100%; width:40px; height:40px; line-height:40px; position: inherit; padding: 0; margin: 0 auto;}
+#datepicker .date-range-selected a{background: #ba998c;display:block; color:#fff; border-radius: 100%; width:40px; height:40px; line-height:40px; position: inherit; padding: 0; margin: 0 auto;}
+
+/*캘린터-버튼*/
+.ui-datepicker-buttonpane{position:absolute; top:0; right:0;}
+.ui-datepicker-buttonpane .ui-datepicker-current{display:none;}
+.ui-datepicker-close{position: absolute; top: 12px; right: 13px; overflow: hidden; text-indent: -9999px; width: 50px; height: 50px; background: url(../img/btn_icon/btn_close_25x25.png) no-repeat 50% 50%;}
+
+/*인원*/
+.revArea .selectRoom .roomWrap .rBox {position: relative; display: inline-block; min-width: 43px; margin-left: 19px; text-align: center;}
+.revArea .selectRoom .roomWrap .rBox:first-child {margin: 0;}
+.revArea .selectRoom .roomWrap .tit {position: inherit; left: inherit; top: inherit;}
+.revArea .selectRoom .roomWrap .rBox > span {display: block; font-size: 20px; font-weight: 600; line-height:1; color: #fff; padding-top: 4px;}
+
+.revArea .mainRoom {display: none; position: absolute; left: -760px; bottom: 70px; background: #fff; width: 1200px; height: 525px; padding: 120px; border-bottom: 1px solid #ccc;}
+.revArea .mainRoom .roomContainer {padding: 0; position: relative; height:100%;}
+.revArea .mainRoom .roomSel {width: 700px; display:inline-block; margin-top:105px;}
+.revArea .mainRoom .roomInner {position: relative; padding-left: 130px;}
+.revArea .mainRoom .roomTit {position: absolute; left: 0; top: 50%; margin-top: -18px; width: 130px; text-align: left; font-size: 24px; font-weight: 500;}
+.numWrap { display: inline-block; vertical-align: middle;}
+.revArea .mainRoom .numPeople {width: 230px;float: left; position: relative;padding: 20px 0;}
+.roomSel.on .numPeople {border-bottom: 1px solid rgb(0, 0, 0);}
+
+.numPeople button {display: block; position: absolute; top: 17px; width: 33px; height: 33px; overflow: hidden; text-indent: -9999px;}
+.numPeople button.btnDown:before {background: url(../img/btn_icon/ico_down.png) no-repeat 50% 50%;}
+.numPeople button:before {content: ''; display: block; width: 33px; height: 33px;}
+.numPeople span {display: block; text-align: center; padding: 0 35px; width: 124px; color: #000; margin: 0 auto;}
+.numPeople button.btnUp {right: 0;}
+.numPeople button.btnUp:before {background: url(../img/btn_icon/ico_up.png) no-repeat 50% 50%;}
+
+.revArea .mainRoom .numPeople+.numPeople {margin-left: 40px;}
+
+.revArea .mainRoom .roomContainer .txtGuide {position: absolute; right: 0; bottom: 135px;}
+p.txtGuide, .txtGuide li {position: relative; color: #888; padding-left: 16px; font-size: 16px; letter-spacing: -.01em;}
+.roomContainer .roomWrap+.txtGuide li {display: inline-block; margin-left: 15px;}
+.revArea .mainRoom .roomContainer .txtGuide li {display: block;}
+p.txtGuide:before, .txtGuide li:before {content: '＊'; position: absolute; left: 0; top: 4px; font: 600 15px gothamL;}
+.txtGuide li + li {margin-top: 6px;}
+
+.btnSC {position: relative; display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+.btnL { min-width: 190px; height: 60px; padding: 0 25px;  line-height: 58px; font-size: 18px; letter-spacing: -.01em;}
+.revArea .mainRoom .roomContainer .btnSC {position: absolute;right: 25px; bottom: 55px;}
+.revArea .btnClose {position: absolute; top: 12px; right: 13px; overflow: hidden; text-indent: -9999px; width: 50px; height: 50px; z-index: 999; background: url(../img/btn_icon/btn_close_25x25.png) no-repeat 50% 50%;}
+
+/*검색-버튼*/
+.revArea .btnSearch {position: absolute; right: 0; top: 0; width: 168px; height: 64px; font-size:20px; font-weight:bold; border: 2px solid #fff; background: transparent; color: #fff;}
+
+/*footer*/
+#footer{height:200px; width:1400px; margin:0 auto; color:#fff; padding:50px 20px; display:flex; justify-content: flex-start;}
+#footer .foot-logo{margin-right:10%; padding-top:15px;}
+#footer .foot-txt{color:#eee; font-weight:200; font-size:15px;}

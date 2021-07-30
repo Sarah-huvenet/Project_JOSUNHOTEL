@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+.topArea {    display: table;    position: relative;    width: 1400px;    margin: 0 auto;}
+.topArea .topInner {    display: table-cell;    padding: 97px 0 90px;}
+.titDep1 {font-family: 'Playfair Display SC', serif;  font-size: 60px;  font-weight: 500;}
+.pageGuide {    margin-top: 18px;    font-size: 20px;    letter-spacing: -.01em;     font-weight: 300;}
+.inner {    position: relative;    width: 1400px;    margin: 0 auto;    padding-bottom: 320px;}
+.lnbArea {    position: absolute;    top: 0;    left: 0;    width: 300px;    padding: 52px 35px 44px;    background: #f9f9f9;}
+.lnbArea .lnb {    margin-left: 2px;}
+.ctmService .lnb.ctmType li.on a {font-size: 18px; font-weight: 600;}
+
+.mypage .myContents {    position: relative;  background: #f9f9f9;  height: auto;  margin-left: 400px; width: 1000px; padding: 0 20px;}
+.titDep2 {font-size: 30px; font-weight: 500; margin: 90px 0 15px;}
+.myContents>table{/*border: 1px solid red;*/ width: 100%; height: 100%; table-layout: fixed; }
+.myContents>table>tbody>tr{height: 20%;}
+.myContents>table>tbody>tr td:first-child{ width: 300px;}
+.myContents>table>tbody>tr>td{min-width:300px; /* border:1px solid; */ padding-bottom: 25px;padding-top: 25px;    padding-right: 50px;}
+.myContents>table>tbody>tr td:last-child {padding-right: 0px;}
+td div{	max-width: 100%;    width: 100%;   margin: 0 auto;  	 height: 100%; border-radius: 15px;	background-position: center center;    background-size: cover;    background-repeat: no-repeat; border: 2px solid #e6c619;}
+td p { border-radius: 15px;  border:8px solid white; width: 100%; height: 100%; font-family:'Noto Sans KR', sans-serif;	font-weight: normal; padding: 20px; overflow: hidden;}
+
+.pagination {    margin-top: 60px;    text-align: center; margin-left: 375px;}
+.pagination > * {    display: inline-block;    width: 50px;    height: 50px;    border: 1px solid #ccc;    line-height: 50px;    margin: 0 4px;    color: #666;    font-family: gothamL;    box-sizing: border-box;}
+.pagination .first, .pagination .prev, .pagination .next, .pagination .last {    position: relative;    border: none;    vertical-align: top;    width: 30px;    margin: 0;}
+.pagination .first:before, .pagination .prev:before, .pagination .next:before, .pagination .last:before {    position: absolute;    top: 50%;    left: 50%;    margin: -10px 0 0 -10px;    content: '';    background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/ico_paging.png) no-repeat 0 0;    width: 20px;    height: 20px;}
+.pagination .first:before {    background-position: 0 0;}
+.pagination .prev:before {    background-position: -35px 0;}
+.pagination .next:before {    background-position: 5px -20px;}
+.pagination .last:before {    background-position: -30px -20px;}
+.pagination .current {    border: 1px solid #000;    background: #f9f9f9;    box-sizing: border-box;    color: #000;}
+
+#write{      width: 100px;    border: 1px solid #000;    position: relative;    left: 270px;    font-family: 'Noto Sans KR';    color: #000;}
+.myContents tr{cursor: pointer; }
+h3.titDep2 {margin-top: 0;}
+

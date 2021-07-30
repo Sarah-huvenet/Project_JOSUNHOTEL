@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+/*my page*/
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner {display: table-cell; padding: 97px 0 90px;}
+.mypage h2.titDep1 {text-transform: capitalize;}
+.titDep1 {font: 500 60px 'Playfair Display SC', serif; font-feature-settings: 'lnum', 'pnum';}
+
+.pageGuide {margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight:300;}
+
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+
+.lnbArea {position: absolute; top: 0; left: 0; width: 300px; padding: 52px 35px 44px; background: #f9f9f9;}
+.lnbArea .name {margin-bottom: 21px; font: 500 32px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .name *{font-weight:bold;}
+.lnbArea .lnb {margin-left: 2px;}
+.lnbArea .lnb li {font: 500 22px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .lnb li > ul {margin: 16px 0 37px;}
+.lnbArea .lnb li > ul li a {font: 400 18px/38px 'Noto Sans KR', sans-serif; letter-spacing: -.01em;}
+
+/*my contents - 회원탈퇴*/
+.mypage .myContents {position: relative; min-height: 450px; margin-left: 400px;}
+.mypage .myContents > h3.titDep2 {line-height: 1; letter-spacing: -.01em;}
+
+.titDep2 {font: 500 30px 'Noto Sans KR', sans-serif; margin: 0 0 15px;}
+
+.myContents .pageGuide {margin: -10px 0 35px; font-size: 18px;}
+
+.tleft {text-align: left !important;}
+
+/*유의사항 박스?*/
+.cautionBox {padding: 34px 40px; border: 1px solid #eee;}
+.cautionBox .tit {display: block; margin-bottom: 12px; font: 500 20px/1 'Noto Sans KR', sans-serif; letter-spacing: -.01em;}
+
+.listDep1 li+li {margin-top: 7px;}
+ul.listDep1 li {position: relative; padding-left: 12px; font-size: 16px;}
+ul.listDep1 li:before {content: ''; display: block; position: absolute; left: 0; top: 15px; width: 2px; height: 2px; background: #000;}
+
+.cautionBox+.btnArea {margin-top: 80px;}
+.btnArea {text-align: center;}
+.btnArea button {margin: 0 auto; margin-top: 52px;}
+
+.active {background: #000 !important; color: #fff !important;}
+.active:hover {color: #000 !important;}
+.active:before {content: ""; position: absolute; top: 0; left: -150%; background: #fff; width: 130%;
+    height: 100%; -webkit-transform: skewX(-16deg); -moz-transform: skewX(-16deg); -o-transform: skewX(-16deg); -ms-transform: skewX(-16deg); transform: skewX(-16deg);
+    transition: all 0.5s ease-in-out; z-index: -1;}
+.active:hover:before { left: -10%; transform: skewX(-16deg); -webkit-transform: skewX(-16deg); -ms-transform: skewX(-16deg);}
+
+.btnL {min-width: 190px; height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em;}
+.btnSC {position: relative; display: block; text-align: center; vertical-align: middle; box-sizing: border-box; border: 1px solid #000; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}

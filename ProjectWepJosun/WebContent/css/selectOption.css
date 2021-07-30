@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+.topArea {    display: table;    position: relative;    width: 1400px;    margin: 0 auto;}
+.topArea .topInner {    display: table-cell;    padding: 97px 0 90px;}
+.titDep1 {    font: 500 60px playfair;    font-feature-settings: 'lnum', 'pnum'; font-family: 'Playfair Display SC';}
+.stepWrap {    margin-top: 50px;}
+.selResult {    background: #f9f9f9;    margin-bottom: 100px;}
+.selResult .inner {    padding: 42px 0;}
+.inner {    position: relative;    width: 1400px;    margin: 0 auto;    padding-bottom: 180px;}
+.stepWrap ol {   counter-reset: section;}
+.stepWrap * {    vertical-align: top;}
+.stepWrap ol li.on {    margin-right: 20px;    text-indent: 0;    width: auto;}
+.stepWrap ol li.on:before {    background: #000;    color: #fff;    border-color: #000;}
+.stepWrap ol li {    text-indent: -9999px;    position: relative;    display: inline-block;    padding: 0 0 1px 50px;    box-sizing: content-box;}
+.stepWrap ol li:before {    content: counter(section);    counter-increment: section;    display: inline-block;    position: absolute;    top: 0;    left: 0;    width: 40px;    height: 40px;    line-height: 37px;    color: #9b9fa8;    font-size: 20px;    border: 1px solid #9b9fa8;    border-radius: 40px;    text-align: center;    text-indent: 0;    box-sizing: border-box;    z-index: 2;    background: #fff;    font-family: gothamL;}
+em, address {    font-style: normal;}
+.stepWrap ol li em {text-indent: -9999px;overflow: hidden;white-space: nowrap;word-wrap: normal;font-size: 22px; font-weight:300;}
+.stepWrap ol li.on:after {content: '';display: inline-block;width: 50px;height: 1px;background: #aaa;margin-left: 20px;vertical-align: middle;}
+.selResult .inner {padding: 42px 0 42px 0;}
+.selResult .infoArea:after {    content: '';    display: block;    clear: both;}
+.inner {position: relative;width: 1400px;margin: 0 auto;padding-bottom: 180px;}
+.selResult .infoArea dl dt {font-size: 15px;padding-bottom: 5px; letter-spacing:2px; font-weight:500;}
+.selResult .infoArea dl dd {font-size: 20px; font-weight:300;}
+.selResult .infoArea dl dd span{font-weight:300;}
+.selResult .infoArea {    position: relative;}
+.selResult .infoArea dl.dlType01 {    padding-right: 150px;}
+.selResult .infoArea dl {    float: left;}
+.selResult .infoArea dl.dlType02 {    padding-right: 150px;}
+.selResult .infoArea dl {float: left;}
+.selResult .infoArea dl.dlType02 dd span:before {    content: '';    display: inline-block;    position: relative;    top: 2px;    width: 1px;    height: 18px;    background: #ccc;    margin: 0 15px;}
+.selResult .infoArea dl.dlType03 {    text-align: center;    padding-right: 100px;}
+.roomContainer .roomList > li {border-bottom: 1px solid #ccc;padding: 71px 0;}
+.stepWrap ol li.prev:before {border: none;text-indent: -9999px;background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/bg_step.png) no-repeat;}
+
+.rsvRoomWrap .titDep2 { margin-bottom: 10px; font-family:'Playfair Display SC', serif; font-feature-settings: 'lnum','pnum'; font-weight: 500; font-size: 40px;}
+.titDep2:first-child { margin-top: 0;}
+.rsvRoomWrap .lCont {width: 900px;}
+.titDep2 {font: 500 30px gothamB, notokrR;margin: 90px 0 15px;}
+.rsvRoomWrap .categoryTxt {font-family: gothamL,notokrL; margin-bottom: 30px;}
+.rsvList > li:last-child.toggleOn {border-bottom: 0;}
+.rsvList > li.toggleOn {border-top: 1px solid #000;}
+.rsvList > li:last-child {border-bottom: 1px solid #ccc;}
+.rsvRoomWrap {    min-height: 800px;}
+
+.rsvList > li { padding: 21px 20px 22px;border-top: 1px solid #ccc;}
+.toggleList > li { position: relative;}
+.rsvRoomWrap .rCont {position: absolute;top: 0;right: 0;width: 400px;}
+.rsvList > li .listTit {font: 400 22px gothamB,notokrL;}
+.toggleList > li .toggleCont {display: none;position: relative;}
+.rsvList > li:last-child .toggleInner {padding-bottom: 0;}
+.toggleList > li .toggleCont .toggleInner {padding: 33px 0;}
+.rsvList > li.toggleOn .btnToggle:before {    background-position: -28px 5px;}
+.rsvList > li .btnToggle {    position: absolute;    right: 18px;    top: 24px;   width: 28px;    height: 28px;    overflow: hidden;    text-indent: -9999px;}
+.rsvList > li .btnToggle:before {    content: '';    display: block;    width: 28px;    height: 15px;    padding: 6px 0 7px;    background: url(../img/btn_icon/ico_toggle.png) no-repeat 0 5px;}
+.rsvRoomWrap .rCont .optionTotal .infoData>li:first-child {    margin-top: 0;}
+
+.infoData li {    margin-top: 6px;}
+.rsvRoomWrap .toggleInner>.opTit:first-child {padding-top: 0;}
+.rsvRoomWrap .opTit {display: block;font: 500 14px gothamB,notokrM; padding: 40px 0 12px;}
+.addOption {position: relative;padding-right: 200px;min-height: 35px;}
+.addOption .txt {display: inline-block; vertical-align: middle;}
+.addOption .price {display: inline-block;position: relative;padding-left: 16px;margin-left: 13px;font-family: gothamL,notokrL;vertical-align: middle;}
+.addOption .price:before {content: ''; position: absolute; top: 50%; left: 0; width: 1px; height: 16px; margin-top: -8px; background: #ccc;}
+.addOption .numPeople {position: absolute;right: 0;top: 0;float: none;padding: 0;border-bottom: 0;width: 170px;}
+.numPeople.type02 {width: 170px;border-bottom: 0;padding: 0;font-family: gothamB;font-weight: 500;}
+.addOption .numPeople button[disabled] { cursor: default; background: #f9f9f9;}
+
+.numPeople.type02 button {    border: 1px solid #ccc;    top: 0;}
+.numPeople button.btnDown {    left: 0;}
+.numPeople button {    display: block;    position: absolute;    top: 17px;    width: 33px;    height: 33px;    overflow: hidden;    text-indent: -9999px;}
+.numPeople button.btnDown.blank:before {
+    background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/ico_down_gray.png) no-repeat 50% 50%;
+}
+.numPeople button.btnDown:before {
+    background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/ico_down.png) no-repeat 50% 50%;
+}
+.addOption .numPeople span {    width: 100px;}
+.numPeople.type02 span {    width: 104px;    height: 33px;    line-height: 33px;}
+.numPeople span {    display: block;    text-align: center;    padding: 0 35px;    width: 124px;    color: #000;    margin: 0 auto;    font-family: gothamL;.numPeople.type02 button}
+.numPeople button.btnUp {    right: 0;}
+.numPeople button.btnUp:before {
+    background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/ico_up.png) no-repeat 50% 50%;}
+.numPeople button:before {    content: '';    display: block;    width: 33px;   height: 33px;}
+.rsvRoomWrap .txtGuide {    margin-top: 14px;}
+p.txtGuide, .txtGuide li {    position: relative;    color: #888;    padding-left: 16px;    font: 16px 'Noto Sans KR', sans-serif; font-weight:300;   letter-spacing: -.01em;}
+p.txtGuide:before, .txtGuide li:before {    content: '＊';    position: absolute;    left: 0;    top: 4px;    font: 600 15px gothamL;}
+textarea {    resize: none;    font-size: 16px; width: 100%;}
+.toggleList > li .toggleCont textarea {    border: 1px solid #ccc;    padding: 10px 15px;    height: 160px;}
+.rsvRoomWrap .rCont .rsvList > li.toggleOn {    border-left: 1px solid #000;    border-right: 1px solid #000; border-bottom: 1px solid #000}
+.rsvRoomWrap .rCont .rsvList > li {    padding: 34px 40px 28px;}
+.rsvRoomWrap .rCont .listTit {    font-size: 16px;    color: #989442;    vertical-align: top;}
+.rsvRoomWrap .rCont .listTit .price {    display: block;    color: #000;    font-size: 22px;    line-height: 1;    padding-bottom: 12px;    margin-top: -4px;    font-family: gothamL;}
+.rsvRoomWrap .rCont .listTit .price em {    display: inline-block;    vertical-align: -5px;    font-size: 36px;    ;    margin-right: 3px; font-feature-settings: 'lnum','pnum';    letter-spacing: .075em;}
+.rsvRoomWrap .rCont .toggleList > li .toggleCont .toggleInner {    padding: 13px 0 0;    font-family: gothamL; }
+.rsvRoomWrap .rCont .designScroll {    overflow: inherit !important;}
+.toggleList .designScroll {    position: relative;}
+.rsvRoomWrap .rCont .optionTotal.scrollWrap {    background: none;    height: auto;    max-height: 400px;    margin: 0;    padding: 0;    margin-right: 0 !important;    padding-right: 0 !important;    overflow-y: hidden !important;}
+.rsvRoomWrap .rCont .rsvList > li.toggleOn:after {    content: '';    position: absolute;    left: 0;    bottom: -1px;    height: 1px;    width: 100%;    background: #000;    z-index: 1;}
+.rsvRoomWrap .rCont .optionTotal .infoData+.infoData {    margin-top: 25px;    padding-top: 25px;    border-top: 1px dashed #ccc;}
+.infoData li .lfData { float: left;}
+.rsvRoomWrap .rCont .rsvList > li .btnToggle {    top: 53px;    right: 40px;}
+.txtGuide li + li {    margin-top: 6px;}
+.infoData li span {    font-family: gothamL;}
+.infoData li .rtData {    float: right;    text-align: right;}
+.btnArea {    text-align: center;    margin-top: 78px;}
+.infoData li:after {    content: '';    display: block;    clear: both;}
+.rsvRoomWrap .rCont .totalCont .totalPrice {    position: relative;    padding: 81px 0 27px;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .txt {    font-size: 22px;     font-weight: 300;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .subTxt {    position: absolute;    top: 37px;    right: 0;    font-size: 18px;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .price {    position: absolute;    bottom: 14px;    right: 0;    font-weight: 600;    font-size: 26px;    font-family: gothamL,notokrL;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .price em {    display: inline-block;    vertical-align: -4px;        font-size: 40px;   margin-right: 3px;    font-feature-settings: 'lnum','pnum';    letter-spacing: -.02em;}
+.rsvRoomWrap .rCont .totalCont .btnArea .btnSC {    margin: 0;    padding: 0;    width: 100%;    background: #000;    color: #fff;    font-size: 18px;    display: block;    min-width: auto;}
+.btnArea a, .btnArea button {    margin: 0 10px;}
+.active {    background: #000 !important;    color: #fff !important;}
+.addOption+.addOption {    margin-top: 8px;}
+.active:hover {
+    color: #000 !important;
+}
+.btnL {    min-width: 190px;    height: 60px;    padding: 0 25px;    line-height: 58px;    font-size: 18px;    letter-spacing: -.01em;}
+.btnSC {    position: relative;    display: inline-block;    text-align: center;    vertical-align: middle;    box-sizing: border-box;    color: #000;    border: 1px solid #000;    background: #fff;    transition: color 0.5s ease-in-out;    overflow: hidden;    z-index: 1;    font-family: gothamL, notokrL; text-decoration: none;}
+.active:before {    content: "";    position: absolute;    top: 0;    left: -150%;    background: #fff;    width: 130%;    height: 100%; transform: skewX(-16deg);    transition: all 0.5s ease-in-out;    z-index: -1;}
+
+.active:hover:before {    left: -10%;    transform: skewX(-16deg);    -webkit-transform: skewX(-16deg);    -ms-transform: skewX(-16deg);}
+
+
+.rsvRoomWrap .rCont .designScroll .scrollbar-wrap {    right: -24px;}
+.designScroll .scrollbar-wrap {    z-index: 1;}
+.scrollbar-wrap {    position: absolute;    width: 4px;    right: 6px;    top: 0;    padding-top: 10px;    padding-bottom: 10px;    box-sizing: border-box;    z-index: 100;}
+
+.customScrollBox {    max-height: 300px;    overflow-y: scroll;    padding-right: 5px;}
+.customScrollBox::-webkit-scrollbar { width: 5px; } /* 스크롤 바 */
+.customScrollBox::-webkit-scrollbar-thumb { background: #aaa; border-radius:10px; } /* 실질적 스크롤 바 */
+.customScrollBox::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+.customScrollBox::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+.customScrollBox::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+
+

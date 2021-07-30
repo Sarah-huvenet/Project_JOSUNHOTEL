@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+/*컨텐츠 S*/
+.container {padding-top: 100px;}
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner {display: table-cell; padding: 97px 0 90px;}
+
+.titDep1 {font: 500 60px 'Playfair Display SC', serif; font-feature-settings: 'lnum', 'pnum';}
+.membership .pageGuide {margin: 17px 0;}
+.pageGuide {margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight: 300;}
+
+/*카테고리, 검색창 전체를 구성하는 네모칸*/
+.inner {position: relative; width: 1400px; margin: 0 auto;}
+.searchBox {padding: 8px 30px 26px; background: #f9f9f9;}
+.searchBox.package {margin: 0 auto 120px;}
+.searchBox.package .inner {padding: 30px 0 20px;}
+.searchBox.package .searchOp {margin-bottom: 0;}
+.searchBox.package .intWord {display: inline-block; position: absolute; right: 0; top: 0;}
+.searchBox .searchOp {position: relative; z-index: 20;}
+.selectWrap {display: inline-block; position: relative; height: 60px; background: #fff;}
+.searchBox .selectWrap {background-color: transparent;}
+.searchBox .selectWrap {vertical-align: top;}
+.searchBox .selectWrap .ui-selectmenu-button {background-color: transparent;}
+
+/*Start. select box 외부 css*/
+.form-control {
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  border-radius: 0px;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  clear: both;
+  color: #757575;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: normal;
+  height: 100%;
+  line-height: 58px;
+  margin: 0px 35px 0px 0px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 287px;
+  white-space: nowrap;}
+  .form-control:hover {border-color: #dbdbdb; }
+  .form-control:active, .form-control.open, .form-control:focus {border-color: #999; }
+  .form-control:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .form-control.open:after {-webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); }
+  .form-control.open .list {opacity: 1; pointer-events: auto; -webkit-transform: scale(1) translateY(0); -ms-transform: scale(1) translateY(0); transform: scale(1) translateY(0); }
+  .form-control.disabled {border-color: #ededed; color: #999; pointer-events: none; }
+    .form-control.disabled:after {border-color: #cccccc; }
+  .form-control.wide {width: 100%; }
+    .form-control.wide .list {left: 0 !important; right: 0 !important; }
+  .form-control.right {float: right; }
+    .form-control.right .list {left: auto; right: 0; }
+  .form-control.small {font-size: 12px; height: 36px; line-height: 34px; }
+    .form-control.small:after {height: 4px; width: 4px; }
+    .form-control.small .option {line-height: 34px; min-height: 34px; }
+  .form-control .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+        -ms-transform: scale(0.75) translateY(-21px);
+            transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .form-control .list:hover .option:not(:hover) {background-color: transparent !important; }
+  .form-control .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 30px;
+  	padding-right: 30px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; 
+    width: 287px;
+    }
+    .form-control .option:hover, .form-control .option.focus, .form-control .option.selected.focus {background-color: #f6f6f6; }
+    .form-control .option.selected {font-weight: bold; }
+    .form-control .option.disabled {background-color: transparent; color: #999; cursor: default; }
+.no-csspointerevents .form-control .list {display: none; }
+.no-csspointerevents .form-control.open .list {display: block; }
+/*End. select box 외부 css*/
+
+/*카테고리 외부*/
+.selectWrap .ui-selectmenu-button {display: inline-block; position: relative; width: 100%; height: 60px; line-height: 58px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; border-bottom: 1px solid #000; background: #fff; color: #333; text-align: left; cursor: pointer;}
+.selectWrap .ui-selectmenu-button span {display: inline-block; color: #333; vertical-align: middle;}
+.selectWrap .ui-selectmenu-button:after {content: ''; display: block; position: absolute; right: 0; top: 50%; margin-top: -1px; width: 11px; height: 7px; background: url(../img/btn_icon/spr_form.png) no-repeat 0 -39px;}
+.selectWrap .ui-selectmenu-menu {display: none; top: 0; left: 0; position: absolute; border: solid #333; border-width: 0 1px 1px 1px; width: 100%; background: #fff; overflow: hidden;}
+.selectWrap .ui-selectmenu-menu .ui-menu {max-height: 200px; overflow: hidden;}
+.selectWrap .ui-menu-item {background: #fff; width: 100%; height: 50px; line-height: 50px;}
+.selectWrap .ui-menu-item-wrapper {display: block; text-align: left; cursor: pointer; padding: 0 20px;}
+.selectWrap .ui-state-active {background: #f7f7f7; color: #333; width: 100%; height: 50px;}
+
+.scrollbar {background: #aaa;}
+.scrollbar {position: relative; width: 4px;}
+.scrollbar-wrap {position: absolute; width: 4px; right: 6px; top: 0; padding-top: 10px; padding-bottom: 10px; box-sizing: border-box; z-index: 100;}
+
+/*검색 창*/
+.searchBox .intArea {display: inline-block;}
+.searchBox .intArea input {border-color: #000;}
+.searchBox .intArea input {background-color: transparent;}
+input[type=text] {height: 60px; padding: 8px 13px 8px 0; padding: 7px 13px 9px 0\0IE; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+    
+/*검색 버튼*/
+.searchBox.package .intWord .btnSC {margin-left: 35px; vertical-align: bottom; background: transparent;}
+.btnM {min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em;}
+.btnSC {position: relative; display: inline-block; text-align: center; box-sizing: border-box; color: #000;
+    border: 1px solid #000; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+
+/*목록*/
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+table {width: 100%; border-collapse: separate; empty-cells: show; border-spacing: 0; color: #000; font-weight: 400; font-size: 18px; line-height: 1.8;}
+colgroup {display: table-column-group;}
+
+/*캡션*/
+caption {overflow: hidden; position: static; top: 0; left: 0; width: 0; height: 0; font-size: 0; line-height: 0; text-transform: uppercase;}
+tr {display: table-row; vertical-align: inherit; border-color: inherit;}
+thead {display: table-header-group; vertical-align: middle; border-color: inherit;}
+.tblH thead tr th:first-child {border-left: none;}
+.tblH thead tr th {padding: 16px; font-size: 17px; border-top: 1px solid #000; border-bottom: 1px solid #ccc; text-align: center;
+    text-transform: uppercase; color: #333; background: #fff;}
+
+/*목록*/
+tbody {display: table-row-group; vertical-align: middle; border-color: inherit;}
+.tblH tbody tr td:first-child {border-left: none;}
+.tblH tbody tr td {padding: 16px; font-size: 17px; border-bottom: 1px solid #ccc; text-align: center; background: #fff;}
+.tleft {text-align: left !important;}
+td {margin: 0; word-break: keep-all; word-wrap: break-word;}
+
+/*글쓰기 버튼*/
+.btnArea {margin-top: -60px;}
+.btnArea a {margin: 0 10px;}
+
+.btnSC {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+.writeL {min-width: 190px; height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em; text-align: center; float: right;}
+
+/*페이지네이션*/
+.pagination {margin-top: 60px; text-align: center;}
+.pagination > * { display: inline-block; width: 50px; height: 50px; border: 1px solid #ccc; line-height: 50px; margin: 0 4px; color: #666; font-family: gothamL; box-sizing: border-box;}
+.pagination .first, .pagination .prev, .pagination .next, .pagination .last {position: relative; border: none; vertical-align: top; width: 30px; margin: 0;}
+.pagination .first:before {background-position: 0 0;}
+.pagination .first:before, .pagination .prev:before, .pagination .next:before, .pagination .last:before { position: absolute; top: 50%; left: 50%; margin: -10px 0 0 -10px; content: '';
+    background: url(../img/btn_icon/ico_paging.png) no-repeat 0 0; width: 20px; height: 20px;}
+
+.hidden {overflow: hidden; position: absolute; font: 0/0 notokrL; width: 0; height: 0;}
+
+.pagination .prev {margin-right: 22px;}
+.pagination .prev:before {background-position: -35px 0;}
+.pagination .current { border: 1px solid #000; background: #f9f9f9; box-sizing: border-box; color: #000;}
+.pagination .next { margin-left: 22px;}
+.pagination .next:before { background-position: 5px -20px;}
+.pagination .last:before { background-position: -30px -20px;}

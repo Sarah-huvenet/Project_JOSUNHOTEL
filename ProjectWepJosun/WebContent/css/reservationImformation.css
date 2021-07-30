@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+
+.topArea {    display: table;    position: relative;    width: 1400px;    margin: 0 auto;}
+.topArea .topInner {    display: table-cell;    padding: 97px 0 90px;}
+.titDep1 {    font: 500 60px playfair;    font-feature-settings: 'lnum', 'pnum'; font-family: 'Playfair Display SC';}
+.stepWrap {    margin-top: 50px;}
+.selResult {    background: #f9f9f9;    margin-bottom: 100px;}
+.selResult .inner {    padding: 42px 0;}
+.inner {    position: relative;    width: 1400px;    margin: 0 auto;    padding-bottom: 180px;}
+.stepWrap ol {   counter-reset: section;}
+.stepWrap * {    vertical-align: top;}
+.stepWrap ol li.on {    margin-right: 20px;    text-indent: 0;    width: auto;}
+.stepWrap ol li.on:before {    background: #000;    color: #fff;    border-color: #000;}
+.stepWrap ol li {    text-indent: -9999px;    position: relative;    display: inline-block;    padding: 0 0 1px 50px;    box-sizing: content-box;}
+.stepWrap ol li:before {    content: counter(section);    counter-increment: section;    display: inline-block;    position: absolute;    top: 0;    left: 0;    width: 40px;    height: 40px;    line-height: 37px;    color: #9b9fa8;    font-size: 20px;    border: 1px solid #9b9fa8;    border-radius: 40px;    text-align: center;    text-indent: 0;    box-sizing: border-box;    z-index: 2;    background: #fff;    font-family: gothamL;}
+em, address {    font-style: normal;}
+.stepWrap ol li em {text-indent: -9999px;overflow: hidden;white-space: nowrap;word-wrap: normal;font-size: 22px;}
+.stepWrap ol li.on:after {content: '';display: inline-block;width: 50px;height: 1px;background: #aaa;margin-left: 20px;vertical-align: middle;}
+.selResult .inner {padding: 42px 0 42px 0;}
+.selResult .infoArea:after {    content: '';    display: block;    clear: both;}
+.inner {position: relative;width: 1400px;margin: 0 auto;padding-bottom: 180px;}
+.selResult .infoArea dl dt {font-size: 14px;padding-bottom: 5px; letter-spacing: 2px; font-weight: 500;}
+.selResult .infoArea dl dd {font-size: 20px; font-weight:300;}
+.selResult .infoArea dl dd span{font-weight:300;}
+.selResult .infoArea {    position: relative;}
+.selResult .infoArea dl.dlType01 {    padding-right: 150px;}
+.selResult .infoArea dl {    float: left;}
+.selResult .infoArea dl.dlType02 {    padding-right: 150px;}
+.selResult .infoArea dl {float: left;}
+.selResult .infoArea dl.dlType02 dd span:before {    content: '';    display: inline-block;    position: relative;    top: 2px;    width: 1px;    height: 18px;    background: #ccc;    margin: 0 15px;}
+.selResult .infoArea dl.dlType03 {    text-align: center;    padding-right: 100px;}
+.roomContainer .roomList > li {border-bottom: 1px solid #ccc;padding: 71px 0;}
+.stepWrap ol li.prev:before {border: none;text-indent: -9999px;background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/bg_step.png) no-repeat;}
+
+.stepWrap ol li:last-child.on:after {    position: absolute;    left: -12px;    top: 18px;}
+.stepWrap ol li.on:after {    content: '';    display: inline-block;    width: 50px;    height: 1px;    background: #aaa;    margin-left: 20px;    vertical-align: middle;}
+.stepWrap ol li:last-child.on {    padding-left: 135px;}
+.stepWrap ol li.on {    margin-right: 20px;    text-indent: 0;    width: auto;}
+.stepWrap ol li {    text-indent: -9999px;    position: relative;    display: inline-block;    padding: 0 0 1px 50px;    box-sizing: content-box;}
+.stepWrap * {    vertical-align: top;}
+.stepWrap ol li:last-child.on:before {    left: 80px;}
+.stepWrap ol li.on:before {    background: #000;    color: #fff;    border-color: #000;}
+.stepWrap ol li:before {    content: counter(section);    counter-increment: section;    display: inline-block;    position: absolute;    top: 0;    left: 0;    width: 40px;    height: 40px;    line-height: 37px;    color: #9b9fa8;    font-size: 20px;   border: 1px solid #9b9fa8;    border-radius: 40px;    text-align: center;    text-indent: 0;    box-sizing: border-box;    z-index: 2;    background: #fff;    font-family: gothamL;}
+.rsvRoomWrap {    min-height: 800px;}
+.rsvRoomWrap .lCont {    width: 900px;}
+.rsvRoomWrap .titDep2 {    margin-bottom: 10px;    font-family: 'Playfair Display SC', serif;    font-feature-settings: 'lnum','pnum';    font-weight: 500;    font-size: 40px;}
+.titDep2:first-child {    margin-top: 0;}
+.titDep2 {    font: 500 30px gothamB, notokrR;    margin: 90px 0 15px;}
+.rsvRoomWrap .categoryTxt {    font-family: gothamL,notokrL;    margin-bottom: 30px;}
+.rsvRoomWrap .lCont .intWrap {    margin-top: 42px;}
+.intList > li .tit {    display: inline-block;    position: relative;}
+.intList > li .intWrap+.intInner {    margin-top: 3px;}
+.intList > li .tit label {    display: inline-block;  font-size: 17px; line-height: 1;    color: #333;    text-transform: uppercase;}
+label {    cursor: pointer;}
+.intList > li .intInner {    display: inline-block;    position: relative;}
+.intList > li .intInner > span {    position: relative;    display: inline-block;}
+.intList > li .essential {    display: inline-block;    width: 6px;    height: 6px;    text-indent: -9999px;    overflow: hidden;    position: relative;    padding-right: 4px;    vertical-align: 2px;}
+.intList > li .essential:after {    content: '';    display: inline-block;    position: absolute;    right: 0;    top: 50%;    margin-top: -4px;    width: 6px;    height: 6px;    background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/ico_essential.png) no-repeat 0 0;}
+.intList > li .phoneInp .selectWrap { margin-right: 20px;    vertical-align: middle;}
+.intList > li .emailInp .selectWrap {    display: inline-block;    margin-left: 18px;    vertical-align: middle;}
+.selectWrap {    display: inline-block;    position: relative;    height: 60px;    background: #fff;}
+
+input.readOn, input.readOn[type=text][disabled] {    color: #000;    border: none;}
+input[type=text], input[type=password], input[type=tel] {    height: 60px;    padding: 8px 13px 8px 0;     color: #000;    border: solid #ccc;    border-width: 0 0 1px 0;    vertical-align: middle;   font-size: 18px;    font-family: gothamL,notokrL;}
+.intList > li .phoneInp .dash {    position: relative;    display: inline-block;    width: 49px;}
+.intList > li .phoneInp .dash:after {    content: '';    position: absolute;    left: 50%;    top: 50%;    width: 13px;    height: 1px;    margin-left: -7px;    background: #000;}
+.intList > li .intInner .alertMessage {    display: none;    position: absolute;    top: -32px;    left: 0;    width: 600px;    background: #fff;    color: #b01414;    font: 500 14px/32px notokrR;    margin: 0;}
+.selectWrap select {display: inline-block;    position: relative;    width: 100%;    height: 60px;    line-height: 58px;    text-overflow: ellipsis;    overflow: hidden;    white-space: nowrap;  border:0;   border-bottom: 1px solid #000;    background: #fff;    color: #333;   text-align: left;    cursor: pointer;    font-family: gothamL,notokrL;}
+.intList > li .emailInp .dash {    display: inline-block;    padding: 0 13px;}
+.intList > li .duobuleInp span+span, .intList > li .duobuleSelect div+div {    margin-left: 14px;}
+
+.rsvRoomWrap .intList+.txtGuide {    margin-top: 20px;}
+.rsvRoomWrap .txtGuide {    margin-top: 14px;}
+p.txtGuide:before, .txtGuide li:before {    content: '＊';    position: absolute;    left: 0;    top: 4px;    font: 600 15px gothamL;}
+p.txtGuide, .txtGuide li {    position: relative;    color: #888;    padding-left: 16px;    font: 16px gothamL, notokrL, playfair;    letter-spacing: -.01em;}
+.notiContainer {    margin-top: 70px;}
+.notiContainer .titDep3 {    margin-top: 70px;}
+.titDep3 {    font-size: 20px;    font-weight: 500;    margin-bottom: 20px;}
+.toggleList.agreeCont {    border-top: 1px solid #000;}
+.toggleList.agreeCont .frm.type02 {    padding: 18px 20px 19px;}
+
+.frm {    display: inline-block;    position: relative;}
+.frm input[type=checkbox], .frm input[type=radio] {    position: absolute;    left: 12px;    top: 16px;    width: 1px;    height: 1px;    opacity: 0;}
+.frm.type02 label {    font-size: 18px;    padding-left: 33px;}
+.frm label {    display: inline-block;    position: relative;    font-size: 17px;    padding-left: 35px;    font-family: gothamL,notokrL;    text-transform: uppercase;}
+.frm.type02 input[type=checkbox]:checked+label:before {    background-position: -18px 0;}
+.frm.type02 label:before {    left: 0;    top: 9px;    width: 18px;    height: 13px;}
+.frm label:before {    content: '';    display: block;    position: absolute;  background: url(https://www.josunhotel.com/static/home/images/ko/pc/common/spr_form.png) no-repeat;}
+
+.toggleList > li .toggleCont {    display: none;    position: relative;}
+.toggleList.agreeCont .toggleCont .toggleInner {    padding: 25px;    background: #f9f9f9;}
+.toggleList > li .toggleCont .toggleInner {    /* padding: 40px 0; */    padding: 33px 0;}
+table {    width: 100%;    border-collapse: separate;    empty-cells: show;    border-spacing: 0;}
+
+caption {    overflow: hidden;    position: static;    top: 0;    left: 0;    width: 0;    height: 0;    font-size: 0;    line-height: 0;    text-transform: uppercase;}
+.tblH thead tr th:first-child, .tblH tbody tr td:first-child {    border-left: none;}
+.tblH thead tr th {    padding: 16px;    font-size: 17px;    border-top: 1px solid #000;    border-left: 1px solid #ccc;    border-bottom: 1px solid #ccc;    text-align: center;    text-transform: uppercase;    font-family: gothamM, notokrM;    color: #333;}
+.tblH thead tr th, .tblH tbody tr td {    font-family: gothamL, notokrL;    text-transform: uppercase;    background: #fff;}
+body, input, textarea, select, button, table, th, td, pre {    color: #000;    font-family: notokrL, gothamL, playfair;    font-weight: 400;    font-size: 18px;    line-height: 1.8;}
+td, th {    margin: 0;    padding: 0;    word-break: keep-all;    word-wrap: break-word;}
+
+.tblH tbody tr td {    padding: 16px;    font-size: 17px;    border-left: 1px solid #ccc;    border-bottom: 1px solid #ccc;    text-align: center;}
+.tblH thead tr th, .tblH tbody tr td {    font-family: gothamL, notokrL;    text-transform: uppercase;    background: #fff;}
+.rsvList > li.toggleOn {    border-top: 1px solid #000;}
+
+.toggleList .designScroll {    position: relative;}
+.toggleList.agreeCont .scrollWrap {    color: #666;    font: 16px gothamL, notokrL;    padding-right: 15px !important;    max-height: 250px;    overflow: hidden;}
+p.listDep1, ul.listDep1 li, p.listDep2, ul.listDep2 li {    position: relative;    padding-left: 12px;    font-size: 16px; font-weight: 300;}
+p.listDep1:before, ul.listDep1 li:before {    content: '';    display: block;    position: absolute;    left: 0;    top: 15px;    width: 2px;    height: 2px;  background: #000;}
+p.listDep2:before, ul.listDep2 li:before {    content: '';    display: block;    position: absolute;    left: 0;    top: 15px;    width: 5px;    height: 1px;  background: #000;}
+
+.rsvRoomWrap .rCont {   position: absolute;    top: 0;    right: 0;    width: 400px;}
+.rsvRoomWrap .rCont .rsvList > li.toggleOn {    border-left: 1px solid #000;    border-right: 1px solid #000; border-bottom: 1px solid #000}
+.rsvRoomWrap .rCont .rsvList > li {    padding: 34px 40px 28px;}
+.rsvRoomWrap .rCont .listTit {    font-size: 16px;    color: #989442;    vertical-align: top;}
+.rsvRoomWrap .rCont .listTit .price {    display: block;    color: #000;    font-size: 22px;    line-height: 1;    padding-bottom: 12px;    margin-top: -4px;    font-family: gothamL;}
+.rsvRoomWrap .rCont .listTit .price em {    display: inline-block;    vertical-align: -5px;    font-size: 36px;    ;    margin-right: 3px; font-feature-settings: 'lnum','pnum';    letter-spacing: .075em;}
+.rsvRoomWrap .rCont .toggleList > li .toggleCont .toggleInner {    padding: 13px 0 0;    font-family: gothamL; }
+.rsvRoomWrap .rCont .designScroll {    overflow: inherit !important;}
+.toggleList .designScroll {    position: relative;}
+.rsvRoomWrap .rCont .optionTotal.scrollWrap {    background: none;    height: auto;    max-height: 400px;    margin: 0;    padding: 0;    margin-right: 0 !important;    padding-right: 0 !important;    overflow-y: hidden !important;}
+.rsvRoomWrap .rCont .rsvList > li.toggleOn:after {    content: '';    position: absolute;    left: 0;    bottom: -1px;    height: 1px;    width: 100%;    background: #000;    z-index: 1;}
+.rsvRoomWrap .rCont .optionTotal .infoData+.infoData {    margin-top: 25px;    padding-top: 25px;    border-top: 1px dashed #ccc;}
+.infoData li .lfData { float: left;}
+
+.infoData li span {    font-family: gothamL;}
+.infoData li .rtData {    float: right;    text-align: right;}
+.btnArea {    text-align: center;    margin-top: 78px;}
+.infoData li:after {    content: '';    display: block;    clear: both;}
+ul:after, ol:after {    content: '';    display: block;    clear: both;}
+.rsvRoomWrap .rCont .totalCont .totalPrice {    position: relative;    padding: 81px 0 27px;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .txt {    font-size: 22px;     font-weight: 300;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .subTxt {    position: absolute;    top: 37px;    right: 0;    font-size: 18px;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .price {    position: absolute;    bottom: 14px;    right: 0;    font-weight: 600;    font-size: 26px;    font-family: gothamL,notokrL;}
+.rsvRoomWrap .rCont .totalCont .totalPrice .price em {    display: inline-block;    vertical-align: -4px;    font-weight: 500;    font-size: 40px;    font-family: playfair;    margin-right: 3px;    font-feature-settings: 'lnum','pnum';    letter-spacing: -.02em;}
+.rsvRoomWrap .rCont .totalCont .btnArea .btnSC {    margin: 0;    padding: 0;    width: 100%;    background: #000;    color: #fff;    font-size: 18px;    display: block;    min-width: auto;}
+.btnArea a, .btnArea button {    margin: 0 10px;}
+.active {    background: #000 !important;    color: #fff !important;}
+
+.active:hover  {
+    color: #000 !important;
+}
+.btnL {    min-width: 190px;    height: 60px;    padding: 0 25px;    line-height: 58px;    font-size: 18px;    letter-spacing: -.01em;}
+.btnSC {    position: relative;    display: inline-block;    text-align: center;    vertical-align: middle;    box-sizing: border-box;    color: #000;    border: 1px solid #000;    background: #fff;    transition: color 0.5s ease-in-out;    overflow: hidden;    z-index: 1;    font-family: gothamL, notokrL; text-decoration: none;}
+.active:before {    content: "";    position: absolute;    top: 0;    left: -150%;    background: #fff;    width: 130%;    height: 100%; transform: skewX(-16deg);    transition: all 0.5s ease-in-out;    z-index: -1;}
+
+.active:hover:before {    left: -10%;    transform: skewX(-16deg);    -webkit-transform: skewX(-16deg);    -ms-transform: skewX(-16deg);}
+
+.rsvRoomWrap .rCont {    position: absolute;    top: 0;    right: 0;    width: 400px;}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus{border-bottom: 1px solid #000;}
+
+.customScrollBox {    max-height: 300px;    overflow-y: scroll;    padding-right: 5px;}
+.customScrollBox::-webkit-scrollbar { width: 5px; } /* 스크롤 바 */
+.customScrollBox::-webkit-scrollbar-thumb { background: #aaa; border-radius:10px; } /* 실질적 스크롤 바 */
+.customScrollBox::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+.customScrollBox::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+.customScrollBox::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+

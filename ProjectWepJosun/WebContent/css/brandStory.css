@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/*상단 이미지 있는 부분*/
+.topViewCont {position: relative; overflow: hidden;}
+.topViewCont .img {height: 100vh;}
+.topViewCont img{width:100%; height:100%;}
+.topViewCont .txtCont {position: absolute; top: 50%; left: 50%; text-align: center;transform: translate(-50%, -50%); width: 1400px;}
+.topViewCont .txtCont .category span {display: inline-block; color: #fff; letter-spacing: 10px; text-transform: uppercase;}
+.topViewCont .txtCont .tit {font-family: 'Playfair Display SC', serif;font-weight:800px; font-size:80px; letter-spacing: -1px; color: #fff;}
+.topViewCont button {position: absolute; bottom: 75px; left: 50%; margin-left: -32px; background: url(../img/brandstory/topbtnview.png) no-repeat 0 0; width: 65px; height: 45px;}
+.hidden {overflow: hidden; position: absolute; font: 0/0 notokrL; width: 0; height: 0;}
+
+/*인트로*/
+.brandIntro { width: 1400px; margin: 0 auto 67px;}
+.brandIntro .tit {display: block; padding: 143px 0 13px; font-size:24px; line-height:1.62; letter-spacing: -.01em;}
+.brandIntro .txt{font-weight:300;}
+
+/*브랜드슬로건*/
+.brandSlogan > * {color: #ba998c;}
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+.brandSlogan .tit { position: relative; display: block; font-family: 'Playfair Display SC', serif; font-size:110px; font-weight:500; line-height:1.46; text-transform: capitalize;}
+.brandSlogan .tit:before, .brandSlogan .tit::after {content: ''; position: absolute; height: 3px; background: #ba998c;}
+.brandSlogan .tit:before {width: 888px; right: 0; top: 92px;}
+.brandSlogan .tit:after {width: 805px; left: 0; bottom: -69px;}
+.brandSlogan .txt {display: block; padding: 51px 0 13px; text-align: right; font-weight:300;}
+
+/*호텔스토리*/
+.brandStory {position: relative;}
+.propertyList {overflow: hidden;}
+
+.brandStory::before {content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 860px; background: #296658;}
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+
+.brandStory .inner {padding: 106px 0 103px;}
+
+.propertyList .infoCont .tit {display: block; font-size: 54px; line-height: 1; font-weight: 500; font-feature-settings: 'lnum','pnum'; color: #fff; margin: -10px 0 4px;}
+.brandStory.propertyList .infoCont .tit {font-size:30px; font-weight:500; line-height:1.62; letter-spacing: -.01em;}
+.propertyList .infoCont .txt {margin-top: 12px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: #fff; padding-right: 100px;}
+.brandStory.propertyList .infoCont .txt {display: block; margin-bottom: 63px; padding-right: 0; font-weight:300;}
+
+/*나머지 내용 부분*/
+.brand .titDep3 {margin-bottom: 54px; font-weight:500; font-size:30px; line-height:1.8; letter-spacing: -.01em;}
+.brandSignatureList li {float: left; width: 655px;}
+.brandSignatureList li:nth-child(even) {margin-left: 90px;}
+.brandSignatureList li:nth-of-type(3) {margin-top: -260px;}
+.brandSignatureList li:nth-of-type(5) {margin-top: -165px;}
+
+.brandSignatureList .info {display: inline-block; margin-bottom: 114px; width: 655px; vertical-align: top;}
+.brandSignatureList .info figure {position: relative; margin: 0 0 22px; width: 575px;}
+.brandSignatureList figure.thum > figcaption {position: absolute; top: 0; right: -34px; transform: rotate(90deg) translateX(100%); transform-origin: right top; -ms-transform: rotate(90deg) translateX(100%); -ms-transform-origin: right top; color: #c28168; font-weight:400; font-size:14px; letter-spacing: .2em;}
+
+.brandSignatureList .info .tit {display: block; margin-bottom: 5px; font-weight:500; font-size:20px; line-height:1.8; letter-spacing: -1px; text-transform: uppercase;}
+.brandSignatureList .info .txt {display: block; width: 655px;}
+.brandSignatureList .info .txt p{font-weight:300;}
+
+.brandSignatureList li:last-child .info {margin-bottom: 0;}

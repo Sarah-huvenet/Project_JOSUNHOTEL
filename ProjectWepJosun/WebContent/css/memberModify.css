@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner { display: table-cell; padding: 97px 0 90px;}
+.titDep1 {font: 500 60px 'Playfair Display SC', serif; font-feature-settings: 'lnum', 'pnum';}
+.pageGuide { margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight:300;}
+
+/*반영해줘야 박스가 왼쪽으로 안밀림*/
+.myContents {position: relative; margin-left: 400px;}
+.myContents > h3.titDep2 { line-height: 1; letter-spacing: -.01em;}
+.titDep2:first-child {margin-top: 0;}
+.titDep2 {font: 500 30px 'Noto Sans KR', sans-serif; margin: 90px 0 15px;}
+
+/*박스 띄우기*/
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+.lnbArea {position: absolute; width: 300px; padding: 52px 35px 44px; background: #f9f9f9;}
+.lnbArea .name {margin-bottom: 21px; font: 600 32px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .name *{font-weight:bold;}
+.lnbArea .info {margin-bottom: 40px;}
+.lnbArea .lnb {margin-left: 2px;}
+.lnbArea .lnb li {font: 500 22px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .lnb li > ul {margin: 16px 0 37px;}
+.lnbArea .lnb li > ul li a {font: 400 18px/38px 'Noto Sans KR', sans-serif; letter-spacing: -.01em;}
+
+/*필수정보수정*/
+.container {padding-top: 100px;}
+.hidden {overflow: hidden; position: absolute; width: 0; height: 0;}
+h4 {padding: 0; box-sizing: border-box; word-break: keep-all; word-wrap: break-word;}
+
+/*my information*/
+.myContents h4.titDep3 {margin: 74px 0 24px; font: 500 24px 'Noto Sans KR', sans-serifR; letter-spacing: -.025em;}
+.myContents .defaultTit {display: inline-block; color: #333; font: 500 14px/1 'Noto Sans KR', sans-serifR; text-transform: uppercase;}
+.myContents .intArea input[value] {font-family: 'Noto Sans KR', sans-serif;}
+
+/*이름 성*/
+.myContents .defaultInfo {padding: 9px 13px 0 0; color: #000; vertical-align: middle;}
+
+.frmInfo {display: table; width: 100%; padding-top: 20px;}
+
+.intList > li+li {margin-top: 30px;}
+.intList > li .tit {display: inline-block; position: relative;}
+.intList > li .tit label {display: inline-block; font-size: 17px; line-height: 1; color: #333; text-transform: uppercase;}
+
+.intList > li .essential {display: inline-block; font-size: 14px; width: 6px; height: 6px; text-indent: -9999px; overflow: hidden; position: relative; padding-right: 4px; vertical-align: 2px;}
+.intList > li .essential:after {content: ''; display: inline-block; position: absolute; right: 0; top: 50%; margin-top: -4px; width: 6px; height: 6px; background: url(../img/btn_icon/ico_essential.png) no-repeat 0 0;}
+
+.intList > li .intWrap+.intInner {margin-top: 3px;}
+.intList > li .intInner {display: inline-block; position: relative;}
+.intList > li .intInner > span {position: relative; display: inline-block;}
+.intList > li .intInner .alertMessage {display: none; position: absolute; top: -32px; left: 0; width: 600px; background: #fff; color: #b01414; font: 500 14px/32px 'Noto Sans KR', sans-serif; margin: 0;}
+
+input[type=text] {height: 60px; padding: 8px 13px 8px 0; padding: 7px 13px 9px 0\0IE; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+input[type=text], input[type=password], input[type=tel] {height: 60px; padding: 8px 13px 8px 0; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+
+.intList > li .duobuleInp span+span {margin-left: 14px;}\
+.intList > li .duobuleInp span+span, .intList > li .duobuleSelect div+div {margin-left: 14px;}
+
+.intList > li .phoneInp .dash {position: relative; display: inline-block; width: 49px;}
+.intList > li .phoneInp .dash:after {content: ''; position: absolute; left: 50%; top: 50%; width: 13px; height: 1px; margin-left: -7px; background: #000;}
+.intList > li .intArea+button {margin-left: 20px;}
+
+/*우편번호 검색 버튼*/
+.btnM {min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em;}
+
+/*주소옵션*/
+.intList > li.intList-address .intInner .alertMessage {top: -95px !important; margin-left: 0;}
+
+.intList > li .emailInp .dash {display: inline-block; padding: 0 13px;}
+.intList > li .emailInp .selectWrap {display: inline-block; margin-left: 18px; vertical-align: middle; height:60px;}
+.intList > li .emailInp .selectWrap select{width:100%; height:100%; border-radius:0; border:none; border-bottom:1px solid #000;}
+
+ul:after, ol:after {content: ''; display: block; clear: both;}
+
+.btnArea {text-align: center; margin-top: 78px;}
+.btnArea a, .btnArea button {margin: 0 10px;}
+.active {background: #000 !important; color: #fff !important;}
+.active:hover {color: #000 !important;}
+.active:before {content: ""; position: absolute; top: 0; left: -150%; background: #fff; width: 130%;
+    height: 100%; -webkit-transform: skewX(-16deg); -moz-transform: skewX(-16deg); -o-transform: skewX(-16deg); -ms-transform: skewX(-16deg); transform: skewX(-16deg);
+    transition: all 0.5s ease-in-out; z-index: -1;}
+.active:hover:before { left: -10%; transform: skewX(-16deg); -webkit-transform: skewX(-16deg); -ms-transform: skewX(-16deg);}
+
+.btnL {min-width: 190px; height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em;}
+.btnSC {position: relative; display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}

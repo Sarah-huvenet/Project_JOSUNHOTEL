@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*배경 그라데이션 애니메이션*/
+background: linear-gradient(137deg, #fff6b7, #f77c99, #6578f2, #c2ffd8); 
+background-size: 800% 800%; 
+-webkit-animation: AnimationName 16s ease infinite; 
+-moz-animation: AnimationName 16s ease infinite; 
+-o-animation: AnimationName 16s ease infinite; 
+animation: AnimationName 16s ease infinite; 
+@-webkit-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+@-moz-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%} 
+} 
+
+@-o-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+@keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+.fa, .fas{text-align:center; width:22px;}
+
+.wrapper{background:#525252; color:#fff;}
+
+/*headerbar*/
+.wrapper .headerbar{display: flex; width:100%; padding: 25px 50px; justify-content: space-between;}
+.wrapper .headerbar .maintit p{font-size:30px; letter-spacing:3px; text-transform: uppercase;}
+
+/*headerbar - mnu*/
+.wrapper .headerbar .hbmnu ul{margin-top:25px;}
+.wrapper .headerbar .hbmnu ul li{float:left; margin:0px 20px; position:relative; line-height:1;}
+.wrapper .headerbar .hbmnu ul li:first-child:after{display:block; width:1px; height:100%; background:#fff; position:absolute; right:-20px; top:0; content:'';}
+.wrapper .headerbar .hbmnu ul li a{font-size:17px;}
+
+/*left - 왼쪽 메뉴*/
+.wrapper .container{display:flex; margin:15px 50px; height:760px; background:#fff; color:#000; justify-content: space-between;}
+.wrapper .container .left{width:15%; padding:30px;}
+.wrapper .container .left {color: #fff; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: AnimationName 15s ease infinite; }
+.wrapper .container .left ul li{line-height:2.3;}
+.wrapper .container .left ul li a{display:block; font-weight:300; position:relative;}
+.wrapper .container .left ul li.on a{font-weight:500;}
+.wrapper .container .left ul li.on a:after{display:block; position:absolute; right:0; top:10px; 
+width: 0px;height: 0px;
+  border-top:7px solid transparent;
+  border-bottom:15px solid #fff;
+  border-right: 7px solid transparent;
+  border-left: 7px solid  transparent;
+  transform: rotate(90deg);
+content:'';}
+
+/*right - 오른쪽*/
+.wrapper .container .right{width:88%; position: relative; padding:30px;}
+.wrapper .container .right .contents{}
+
+.wrapper .container .right .contents .qnaListRead{}
+.wrapper .container .right .contents .qnaListRead .listIdx{font-size:15px; margin-bottom:5px;}
+.wrapper .container .right .contents .qnaListRead .listIdx span{}
+
+.wrapper .container .right .contents .qnaListRead table{}
+.wrapper .container .right .contents .qnaListRead table tr{}
+.wrapper .container .right .contents .qnaListRead table tr.content{height:200px;}
+.wrapper .container .right .contents .qnaListRead table tr th{width:15%; background: #525252; color:#fff; padding:2px; font-size:16px; border-left:1px solid #000; border-top:1px solid #000;}
+.wrapper .container .right .contents .qnaListRead table tr td{padding:2px 10px; font-size:16px; font-weight:300; border-left:1px solid; border-top:1px solid; border-right:1px solid}
+.wrapper .container .right .contents .qnaListRead table tr:last-child th,
+.wrapper .container .right .contents .qnaListRead table tr:last-child td{border-bottom:1px solid #000;}
+
+.wrapper .container .right .comment{margin-top:15px;}
+.wrapper .container .right .comment .comCnt{font-size:16px;}
+.wrapper .container .right .comment #content{width:85%; float:left; font-size:15px; font-weight:300; padding:0 5px; border-radius: 0 !important; outline:none !important;}
+.wrapper .container .right .comment .comBtn{float:left; width:14%; margin-left:1%; height:56px; line-height:56px;}
+.wrapper .container .right .comment .comBtn button{display:block; width:100%; height:100%; text-align:center; font-size:16px; color:#fff; background: #525252;}
+.wrapper .container .right .comment:after{content:''; clear:both; display:block;}
+
+.wrapper .container .right .commentList{margin-top:10px; padding:10px; height:160px; overflow-y:scroll; background: #efefef;}
+.wrapper .container .right .commentList p{font-size:15px; font-weight:300; border-bottom:1px solid #ddd;}
+.wrapper .container .right .commentList p span{display:inline-block; margin-right:10px;}
+
+.wrapper .container .right .btnPrev{position:absolute; bottom:3%;}
+.wrapper .container .right .btnPrev a{display:block; width:150px; background:#525252; text-align:center; padding:5px; color:#fff;}

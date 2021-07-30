@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*배경 그라데이션 애니메이션*/
+background: linear-gradient(137deg, #fff6b7, #f77c99, #6578f2, #c2ffd8); 
+background-size: 800% 800%; 
+-webkit-animation: AnimationName 16s ease infinite; 
+-moz-animation: AnimationName 16s ease infinite; 
+-o-animation: AnimationName 16s ease infinite; 
+animation: AnimationName 16s ease infinite; 
+@-webkit-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+@-moz-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%} 
+} 
+
+@-o-keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+@keyframes AnimationName { 
+	0%{background-position:0% 50%} 
+	50%{background-position:100% 50%} 
+	100%{background-position:0% 50%} 
+} 
+
+.fa, .fas{text-align:center; width:22px;}
+
+.wrapper{background:#525252; color:#fff;}
+
+/*headerbar*/
+.wrapper .headerbar{display: flex; width:100%; padding: 25px 50px; justify-content: space-between;}
+.wrapper .headerbar .maintit p{font-size:30px; letter-spacing:3px; text-transform: uppercase;}
+
+/*headerbar - mnu*/
+.wrapper .headerbar .hbmnu ul{margin-top:25px;}
+.wrapper .headerbar .hbmnu ul li{float:left; margin:0px 20px; position:relative; line-height:1;}
+.wrapper .headerbar .hbmnu ul li:first-child:after{display:block; width:1px; height:100%; background:#fff; position:absolute; right:-20px; top:0; content:'';}
+.wrapper .headerbar .hbmnu ul li a{font-size:17px;}
+
+/*left - 왼쪽 메뉴*/
+.wrapper .container{display:flex; margin:15px 50px; height:760px; background:#fff; color:#000; justify-content: space-between;}
+.wrapper .container .left{width:15%; padding:30px;}
+.wrapper .container .left {color: #fff; background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); background-size: 400% 400%; animation: AnimationName 15s ease infinite; }
+.wrapper .container .left ul li{line-height:2.3;}
+.wrapper .container .left ul li a{display:block; font-weight:300; position:relative;}
+.wrapper .container .left ul li.on a{font-weight:500;}
+.wrapper .container .left ul li.on a:after{display:block; position:absolute; right:0; top:10px; 
+width: 0px;height: 0px;
+  border-top:7px solid transparent;
+  border-bottom:15px solid #fff;
+  border-right: 7px solid transparent;
+  border-left: 7px solid  transparent;
+  transform: rotate(90deg);
+content:'';}
+
+/*right - 오른쪽 메뉴*/
+.wrapper .container .right{width:88%;position: relative;}
+.wrapper .container .right .search{display:flex; width:100%; padding:30px;}
+.wrapper .container .right .search:after{content:''; clear:both; diplay:block;}
+.wrapper .container .right .search div{height:35px; margin-right:15px;}
+.wrapper .container .right .search .selectWrap{width:15%;}
+.wrapper .container .right .search #searchType{width:100%; height:100%; font-size:17px; border-radius:0;}
+.wrapper .container .right .searchtxt{width:40%;}
+.wrapper .container .right .searchtxt input{width:100%; height:100%; border-width:1px; font-size:17px; padding:0 10px;}
+.wrapper .container .right .search .button{width:150px;}
+.wrapper .container .right .search .button button{width:100%; height:100%; background:#525252; color:#fff;}
+
+.wrapper .container .right .contents{padding:0 30px;}
+.wrapper .container .right .contents .memberList{width:100%; text-align:center;}
+.wrapper .container .right .contents .memberList thead tr th{font-size:16px; font-weight:500; border-left:1px solid #000; border-top:1px solid #000; border-bottom:1px solid #000; background:#525252; color:#fff;}
+.wrapper .container .right .contents .memberList thead tr th:last-child{border-right:1px solid #000;}
+
+.wrapper .container .right .contents .memberList tbody tr td{font-size:15px; font-weight:300; border-left:1px solid; border-bottom:1px solid #000;}
+.wrapper .container .right .contents .memberList tbody tr td:last-child{border-right:1px solid #000;}
+
+.wrapper .container .right .page{position:absolute; bottom:3%; width:100%; text-align:center;}
+.wrapper .container .right .page a{display:inline-block; width:25px; font-size:17px; font-weight:300; color:#999;}
+.wrapper .container .right .page a.active{font-weight:bold; color:#000;}

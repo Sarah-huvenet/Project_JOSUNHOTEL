@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/*container*/
+.container {padding-top: 100px;}
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner {display: table-cell; padding: 97px 0 90px;}
+.titDep1 {font-family: 'Playfair Display SC', serif; font-size:60px; font-weight:500;}
+.pageGuide {margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight:300;}
+
+/*container - contents*/
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+
+/*lnb*/
+.lnbArea { position: absolute; top: 0; left: 0;  width: 300px;  padding: 52px 35px 44px; background: #f9f9f9;}
+.ctmService .lnb.ctmType li a {font-weight:300;}
+.ctmService .lnb.ctmType li.on a {font-size:18px;font-weight:600;}
+
+/*로그인 체크 - 텍스트 박스*/
+.ctmService .txtBox {position: relative; background: #f9f9f9; padding: 40px 30px;}
+.ctmService .txtBox .txt {font-size:18px; font-weight:300;}
+.ctmService .txtBox button, .ctmService .txtBox a { position: absolute; top: 50%; right: 30px; margin-top: -25px; padding: 0 60px 0 20px;}
+.ctmService .txtBox button.icoArr::after, .ctmService .txtBox a.icoArr::after {content: ''; display: block; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); width: 7px; height: 13px; background: url(../img/btn_icon/ico_arr_7x13.png) no-repeat 0 0;}
+
+/*mycontents*/
+.mypage .myContents {position: relative; min-height: 900px; margin-left: 400px;}
+.titDep2 {font-size:30px; font-weight:500;margin: 90px 0 15px;}
+.titDep2:first-child {
+    margin-top: 0;
+}
+
+.ctmService .frmInfo {margin-top: 65px;}
+.intList > li .tit {display: inline-block; position: relative;}
+.intList > li .tit label {display: inline-block; font-size: 17px; line-height: 1; color: #333; text-transform: uppercase;}
+.intList > li .essential {display: inline-block; font-size: 14px; line-height: 1; margin-left:10px;}
+.intList > li.error label {color: #b01414;}
+.intList > li.error .essential{color: #b01414;}
+
+.intBox {padding: 16px 0 5px 0;}
+.frm {display: inline-block; position: relative;}
+.frm input[type=checkbox], .frm input[type=radio] {position: absolute; left: 12px; top: 16px; width: 1px; height: 1px; opacity: 0;}
+.frm label {display: inline-block; position: relative; font-size: 17px; padding-left: 35px; text-transform: uppercase;}
+.frm label:before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 26px; height: 26px; background: url(../img/btn_icon/spr_form.png) no-repeat;}
+.frm input[type=radio]+label:before {background-position: -52px -13px;}
+.frm input[type=radio]:checked+label:before {background-position: -78px -13px;}
+
+
+.intBox .frm + .frm {margin-left: 18px;}
+.intList > li+li {margin-top: 30px;}
+.intList > li .intWrap+.intInner {margin-top: 3px;}
+
+.intList > li .intInner {display: inline-block; position: relative;}
+.intList > li .intInner > span {position: relative; display: inline-block;}
+.intInner .intArea>textarea {margin-top: 7px;}
+textarea.noLine {height: 115px; border: 0; border-bottom: 1px solid #ccc;}
+textarea {resize: none; font-size: 16px;}
+.intList > li .intInner .alertMessage {display: none; position: absolute; top: -32px; left: 0; width: 600px;
+    background: #fff; color: #b01414; font-size:14px; font-weight:500; line-height:32px; margin: 0;
+}
+.intList > li .txtGuide {margin-top: 14px;}
+p.txtGuide, .txtGuide li {position: relative; color: #888; font-size: 16px; letter-spacing: -.01em;}
+
+input[type=text], input[type=password], input[type=tel] {height: 60px; padding: 8px 13px 8px 0; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus{border-bottom: 1px solid #000;}
+
+.intList > li .phoneInp .dash {position: relative; display: inline-block; width: 49px;}
+.intList > li .phoneInp .dash:after { content: '';  position: absolute;  left: 50%;  top: 50%; width: 13px; height: 1px; margin-left: -7px; background: #000;}
+
+.intList > li .emailInp .dash {display: inline-block; padding: 0 13px;}
+
+
+.selectWrap {position: relative; height: 60px; background: #fff;}
+.intList > li .emailInp .selectWrap {display: inline-block; margin-left: 18px; vertical-align: middle;}
+
+#emailType{width:100%; height:100%; border-radius:0; border:none; border-bottom:1px solid #000;}
+
+.fileUpload {position: relative;}
+.intDel {position: relative; display: inline-block;}
+.intDel .btnDel {display: none; position: absolute; top: 50%; right: 0; background: url(../img/btn_icon/btn_close_14x14.png) no-repeat 50% 50%; color: transparent; width: 14px; height: 14px; margin-top: -7px; line-height: 0;}
+.fileUpload>.btnSC.btnM {position: absolute; top: 5px;}
+.fileUpload label {margin-left: 20px;}
+.btnM {min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em;}
+.btnSC {display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+
+/*개인정보이용약관*/
+.myContents h4.titDep3 {margin: 74px 0 24px; font-size:24px; font-weight:500; letter-spacing: -.025em;}
+.myContents .toggleList.rsvList li:first-of-type {border-top-color: #000;}
+.rsvList > li:last-child {border-bottom: 1px solid #ccc;}
+.rsvList > li {padding: 21px 20px 22px; border-top: 1px solid #ccc;}
+.toggleList > li {position: relative;}
+.rsvList > li:last-child.toggleOn {border-bottom: 0;}
+.rsvList > li.toggleOn {border-top: 1px solid #000;}
+
+.frm.type02 {display: block;}
+.frm.type02 label {font-size: 18px; padding-left: 33px;}
+.frm.type02 label:before{ content: ''; display: block; position: absolute; left: 0; top: 9px; width: 18px; height: 13px; background: url(../img/btn_icon/spr_form.png) no-repeat;}
+.frm.type02 input[type=checkbox]+label:before {background-position: 0 0;}
+.frm.type02 input[type=checkbox]:checked+label:before { background-position: -18px 0;}
+
+.rsvList > li .btnToggle {position: absolute; right: 18px;top: 24px;width: 28px; height: 28px; overflow: hidden; text-indent: -9999px;}
+.rsvList > li .btnToggle:before {content: ''; display: block; width: 28px; height: 15px; padding: 6px 0 7px; background: url(../img/btn_icon/ico_toggle.png) no-repeat 0 5px;}
+.rsvList > li.toggleOn .btnToggle:before {background-position: -28px 5px;}
+
+.toggleList > li .toggleCont {display: none; position: relative;}
+.toggleList > li .toggleCont .toggleInner {padding: 40px 0; padding: 33px 0;}
+.rsvList > li:last-child .toggleInner {padding-bottom: 0;}
+
+table {width: 100%; border-collapse: separate; empty-cells: show; border-spacing: 0;}
+caption {overflow: hidden; position: static; top: 0; left: 0;  width: 0; height: 0; font-size: 0; line-height: 0; text-transform: uppercase;}
+
+.tblH thead tr th {padding: 16px; font-size: 17px; border-top: 1px solid #000; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc; text-align: center; text-transform: uppercase; color: #333;}
+.tblH thead tr th:first-child, .tblH tbody tr td:first-child {border-left: none;}
+.tblH tbody tr td { padding: 16px; font-size: 16px; border-left: 1px solid #ccc; border-bottom: 1px solid #ccc; text-align: center;}
+.tblH thead tr th:first-child, .tblH tbody tr td:first-child {border-left: none;}
+
+.boldTxt { font-weight: 600; text-decoration: underline;}
+table + .txtGuide { margin-top: 15px;}
+
+.btnArea {text-align: center;margin-top: 78px;}
+.btnArea a, .btnArea button {margin: 0 10px;}
+.active {background: #000 !important; color: #fff !important;}
+.btnL {min-width: 190px;height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em;}
+.btnSC {position: relative; display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000;
+    border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+.active:before {content: ""; position: absolute;  top: 0; left: -150%;  background: #fff; width: 130%; height: 100%; -webkit-transform: skewX(-16deg);
+    -moz-transform: skewX(-16deg);
+    -o-transform: skewX(-16deg);
+    -ms-transform: skewX(-16deg);
+    transform: skewX(-16deg);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.active:hover {color: #000 !important;}
+.active:hover:before { left: -10%; transform: skewX(-16deg);
+    -webkit-transform: skewX(-16deg);
+    -ms-transform: skewX(-16deg);
+}

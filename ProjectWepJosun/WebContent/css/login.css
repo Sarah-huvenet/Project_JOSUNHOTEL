@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container{padding-top:100px;}
+
+.topArea .f75 + .pageGuide{text-align:center;}
+.pageGuide{margin-top:18px;font-size:20px;letter-spacing:-.01em; font-weight:300;}
+.topArea {    display: table;    position: relative;    width: 1400px;    margin: 0 auto;}
+.topArea .topInner {    display: table-cell;    padding: 97px 0 90px;}
+.titDep1 {    font: 500 60px 'Playfair Display SC', serif;    font-feature-settings: 'lnum', 'pnum';}
+.pageGuide {    margin-top: 18px;    font-size: 20px;    letter-spacing: -.01em;}
+.inner {   position: relative;    width: 1400px;    margin: 0 auto;    padding-bottom: 180px;}
+
+.membersLogin {padding-right: 40px;}
+.membersLogin, .nonMembersLogin {display: table-cell; padding:0 0 98px; vertical-align: top;}
+
+.frm {    display: inline-block;    position: relative;}
+.frm label {    display: inline-block;    position: relative;    font-size: 17px;    padding-left: 35px;    font-family: gothamL,notokrL;    text-transform: uppercase;}
+.frm label:before {    content: '';    display: block;    position: absolute;    left: 0;    top: 3px;    width: 26px;    height: 26px;    background: url(../img/btn_icon/spr_form.png) no-repeat;}
+.frm input[type=checkbox], .frm input[type=radio] {    position: absolute;    left: 12px;    top: 16px;    width: 1px;    height: 1px;    opacity: 0;}
+.frm input[type=checkbox]:checked+label:before {    background-position: -26px -13px;}
+.frm input[type=checkbox]+label:before {    background-position: 0 -13px;}
+
+.loginFrm{position:relative;margin-bottom:10px}
+.loginFrm + .frm {display: block; margin: 16px 0 7px;}
+.login .loginBox {display: table; width: 100%;}
+.login .membersLogin .loginFrm .alertMessage, .login .selectWrap .alertMessage {position: absolute; top: -32px; left: 0;}
+.login .selectWrap + .loginFrm .alertMessage, .login .loginFrm + .loginFrm .alertMessage {position: static;}
+.loginFrm .alertMessage, .selectWrap .alertMessage {display: none; width: 100%; color: #b01414; font: 500 14px/32px notokrR;}
+.login .loginFrm input {background-color: #f9f9f9;}
+.loginFrm input {width: 100%; height: 65px; padding: 20px; border: none;}
+input[type=text], input[type=password], input[type=tel] {height: 60px; padding: 8px 13px 8px; padding: 7px 13px 9px 0\0IE;color: #000; border:none;vertical-align: middle; font-size: 18px; font-family: gothamL,notokrL;}
+
+.loginFrm.error input {border: 1px solid #b01414;}
+
+.active{background:#000 !important;color:#fff !important;}
+.active:before{content: "";position:absolute;top:0;left:-150%;background:#fff;width:130%;height:100%;-webkit-transform:skewX(-16deg);-moz-transform:skewX(-16deg);-o-transform:skewX(-16deg);-ms-transform:skewX(-16deg);transform:skewX(-16deg);transition:all 0.5s ease-in-out;z-index:-1}
+.active:hover{color:#000 !important}
+.active:hover:before{left:-10%;transform:skewX(-16deg);-webkit-transform:skewX(-16deg);-ms-transform:skewX(-16deg)}
+
+/* Button */
+.login .btnSC.btnL.active {height: 60px; margin: 15px 0 15px; padding: 0; font-size: 20px; font-weight: 500; line-height: 60px;}
+.btnFull{width:100% !important;min-width:auto;}
+.btnL{min-width:190px;height:60px;padding:0 25px;line-height:58px;font-size:18px;letter-spacing:-.01em}
+.btnSC{position:relative;display:inline-block;text-align:center;vertical-align:middle;box-sizing:border-box;color:#000;border:1px solid #000;background:#fff;transition:color 0.5s ease-in-out;overflow:hidden;z-index:1;font-family:gothamL, notokrL}
+
+.btnSC[disabled]{color:#b2b2b2!important;border-color:#e6e6e6!important;background:#e6e6e6!important;cursor:default}
+.btnSC[disabled]:before{display:none}
+.btnM{min-width:162px;height:50px;padding:0 25px;line-height:48px;font-size:17px;letter-spacing:-.01em}
+.btnS{display:inline-block;min-width:68px;font-size:15px;border:0;vertical-align:top}
+.btnMW {width:220px;}
+.btnMW + .btnMW {margin-left:20px;}
+
+.login .txtGuide::before {content: '';display: block;width: 100%;height: 1px;margin-bottom: 15px;background-color: #ccc;}
+
+p.txtGuide, .txtGuide li{position:relative;color:#888;padding-left:16px;font:16px gothamL, notokrL, playfair;letter-spacing:-.01em;}
+p.txtGuide:before, .txtGuide li:before{content:'＊';position:absolute;left:0;top:4px;font:600 15px gothamL} /* font 수정 yjs */
+.txtGuide li + li{margin-top:6px}
+
+.loginGuide {margin-bottom: 10px; font-size: 17px;}
+
+.icoArr {position: relative; padding-right: 17px; background: transparent;}
+.loginLink a {margin-right: 20px;}
+.icoArr::after {content: ''; display: block; position: absolute; right: 0; top: 50%; margin-top: -6px; width: 7px; height: 13px; background: url(../img/btn_icon/ico_arr_7x13.png) no-repeat 0 0;}

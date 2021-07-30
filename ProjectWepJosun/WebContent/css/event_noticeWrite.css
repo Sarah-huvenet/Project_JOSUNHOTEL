@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+input[type=text] {height: 60px; padding: 8px 13px 8px 0; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner {display: table-cell; padding: 97px 0 90px;}
+
+.h2 .titDep {text-transform: capitalize;/*대문자&소문자로 바꾸는 속성*/}
+.titDep {font: 500 60px 'Playfair Display SC', serif; font-feature-settings: 'lnum', 'pnum';}
+.pageGuide {margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight:300;}
+ 
+.inner {position: relative; width: 1400px; margin: 0 auto; padding-bottom: 180px;}
+.contents {position: relative; border-top:1px solid #000;}
+
+.idx {display: inline-block; font-size: 17px; line-height: 1; color: #333; text-transform: uppercase;}
+
+.intList > li .tit, {display: inline-block; position: relative;}
+.intList > li .tit label {display: inline-block; font-size: 17px; line-height: 1; color: #333; text-transform: uppercase;}
+.intList > li .essential {display: inline-block; font-size: 14px; line-height: 1; margin-left:10px;}
+.intList > li.error label {color: #b01414;}
+.intList > li.error .essential{color: #b01414;}
+
+.intBox {padding: 16px 0 5px 0;}
+.frm {display: inline-block; position: relative;}
+.frm input[type=checkbox], .frm input[type=radio] {position: absolute; left: 12px; top: 16px; width: 1px; height: 1px; opacity: 0;}
+.frm label {display: inline-block; position: relative; font-size: 17px; padding-left: 35px; text-transform: uppercase;}
+.frm label:before {content: ''; display: block; position: absolute; left: 0; top: 3px; width: 26px; height: 26px; background: url(../img/btn_icon/spr_form.png) no-repeat;}
+.frm input[type=radio]+label:before {background-position: -52px -13px;}
+.frm input[type=radio]:checked+label:before {background-position: -78px -13px;}
+
+.intBox .frm + .frm {margin-left: 18px;}
+.intList > li+li {margin-top: 30px;}
+.intList > li .intWrap+.intInner {margin-top: 3px;}
+
+input[type=text], input[type=password], input[type=tel] {height: 60px; padding: 8px 13px 8px 0; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus{border-bottom: 1px solid #000;}
+
+.intInner .intArea>textarea {margin-top: 7px;}
+textarea {resize: none; padding:5px; border:1px solid #ccc; border-radius:0;}
+textarea:focus{outline:none; border-color:#000;}
+
+.fileUpload {position: relative;}
+.intDel {position: relative; display: inline-block;}
+.intDel .btnDel {display: none; position: absolute; top: 50%; right: 0; background: url(../img/btn_icon/btn_close_14x14.png) no-repeat 50% 50%; color: transparent; width: 14px; height: 14px; margin-top: -7px; line-height: 0;}
+.fileUpload>.btnSC.btnM {position: absolute; top: 5px;}
+.fileUpload label {margin-left: 20px;}
+.btnM {min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em;}
+.btnSC {display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+input[type="file"] {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+
+.intList > li .txtGuide {margin-top: 14px;}
+p.txtGuide, .txtGuide li {color: #888; font-size: 16px; letter-spacing: -.01em;}
+
+.btnArea {text-align: center;margin-top: 78px;}
+.btnArea a, .btnArea button {margin: 0 10px;}
+.btnL {min-width: 190px; height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em; text-align: center;}
+.btnSC {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #000; border: 1px solid #000; background: #fff; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1;}
+.btnArea a.cancel{float:left;}
+.btnArea a.active{float:right;}

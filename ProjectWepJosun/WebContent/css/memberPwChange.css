@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+.container {padding-top: 100px;}
+
+/*my page*/
+.topArea {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.topArea .topInner {display: table-cell; padding: 97px 0 90px;}
+.mypage h2.titDep1 {text-transform: capitalize;}
+.titDep1 {font: 500 60px 'Playfair Display SC', serif; font-feature-settings: 'lnum', 'pnum';}
+
+/*멤버십 회원을 위한 다양한 혜택이 준비되어 있습니다.*/
+.pageGuide {margin-top: 18px; font-size: 20px; letter-spacing: -.01em; font-weight:300;}
+
+/*큰 박스(왼 박, 오 박 감싸는)*/
+.inner {position: relative; width: 1400px; margin: 0 auto;padding-bottom: 180px;}
+.lnbArea {position: absolute; top: 0; left: 0; width: 300px; padding: 52px 35px 44px; background: #f9f9f9;}
+.lnbArea .lnb {margin-left: 2px;}
+.lnbArea .lnb li { font: 500 22px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .lnb li > ul {margin: 16px 0 37px;}
+.lnbArea .lnb li > ul li a {font: 400 18px/38px 'Noto Sans KR', sans-serif; letter-spacing: -.01em;}
+.lnbArea .name {margin-bottom: 21px; font: 600 32px/1 'Noto Sans KR', sans-serif; letter-spacing: -.025em;}
+.lnbArea .name *{font-weight:bold;}
+
+/*My Contents 비밀번호 변경*/
+.myContents {position: relative; margin-left: 400px;}
+.myContents > h3.titDep2 {line-height: 1; letter-spacing: -.01em;}
+
+.titDep2 {font: 500 30px 'Noto Sans KR', sans-serif; margin: 90px 0 15px;}
+.titDep2:first-child {margin-top: 0;}
+
+/*현재 비밀번호 블라블라*/
+.myContents .pageGuide {margin: -10px 0 35px; font-size: 18px;}
+.tleft {text-align: left !important;}
+
+/*cuppent password*/
+.intList > li .tit {display: inline-block; position: relative;}
+.intList > li .intInner {display: inline-block; position: relative;}
+.intList > li .intInner > span {position: relative; display: inline-block;}
+.intList > li .intInner .alertMessage { display: none; position: absolute; top: -32px; left: 0; width: 600px; background: #fff; color: #b01414; font: 500 14px/32px 'Noto Sans KR', sans-serif; margin: 0;}
+.intList > li .intWrap+.intInner {margin-top: 3px;}
+
+input[type=password], input[type=tel] {height: 60px; padding: 8px 13px 8px 0; color: #000; border: solid #ccc; border-width: 0 0 1px 0; vertical-align: middle; font-size: 18px;}
+
+/*new password*/
+.intList > li+li {margin-top: 30px;}
+.intList > li .tit label {display: inline-block; font-family: 'Noto Sans KR', sans-serif; font-size: 17px; line-height: 1; color: #333; text-transform: uppercase;}
+.intList > li .essential {display: inline-block; font-size: 14px; width: 6px; height: 6px; text-indent: -9999px; overflow: hidden; position: relative; padding-right: 4px; vertical-align: 2px;}
+.intList > li .essential:after {content: ''; display: inline-block; position: absolute; right: 0; top: 50%; margin-top: -4px; width: 6px; height: 6px;
+    background: url(../img/btn_icon/ico_essential.png) no-repeat 0 0;}
+
+/*비밀번호내 id가 포함되거나~ 블라블라*/
+.intList > li .txtGuide {margin-top: 14px;}
+p.txtGuide {position: relative; color: #888; padding-left: 16px; font: 16px 'Noto Sans KR', sans-serif; letter-spacing: -.01em;}
+p.txtGuide:before {content: '＊'; position: absolute; left: 0; top: 4px; font: 600 15px 'Noto Sans KR', sans-serif;}
+
+/*confirm pw*/
+.intList > li.intList-repwd {position: absolute; margin-top: -95px !important; right: 0;}
+.intList > li .intWrap+.intInner {margin-top: 3px;}
+
+/*확인 전 공백*/
+.btnArea {text-align: center; margin-top: 78px;}
+.btnArea button {margin: 0 10px;}
+.btnL {min-width: 190px; height: 60px; padding: 0 25px; line-height: 58px; font-size: 18px; letter-spacing: -.01em;}
+.btnSC {position: relative; display: inline-block; text-align: center; vertical-align: middle; box-sizing: border-box; border: 1px solid #000; transition: color 0.5s ease-in-out; overflow: hidden; z-index: 1; font-family: 'Noto Sans KR', sans-serif;}
+.active {background: #000 !important; color: #fff !important;}
+.active:hover {color: #000 !important;}
+.active:before {content: ""; position: absolute; top: 0; left: -150%; background: #fff; width: 130%;
+    height: 100%; -webkit-transform: skewX(-16deg); -moz-transform: skewX(-16deg); -o-transform: skewX(-16deg); -ms-transform: skewX(-16deg); transform: skewX(-16deg);
+    transition: all 0.5s ease-in-out; z-index: -1;}
+.active:hover:before { left: -10%; transform: skewX(-16deg); -webkit-transform: skewX(-16deg); -ms-transform: skewX(-16deg);}

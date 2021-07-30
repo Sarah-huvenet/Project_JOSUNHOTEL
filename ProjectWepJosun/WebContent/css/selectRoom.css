@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+.container {padding-top: 100px;}
+
+.topArea {    display: table;    position: relative;    width: 1400px;    margin: 0 auto;}
+.topArea .topInner {    display: table-cell;    padding: 97px 0 90px;}
+.titDep1 {    font: 500 60px playfair;    font-feature-settings: 'lnum', 'pnum'; font-family: 'Playfair Display SC';}
+.stepWrap {    margin-top: 50px;}
+.selResult {    background: #f9f9f9;    margin-bottom: 100px;}
+.selResult .inner {    padding: 42px 0;}
+.inner {    position: relative;    width: 1400px;    margin: 0 auto;    padding-bottom: 180px;}
+.stepWrap ol {   counter-reset: section;}
+.stepWrap * {    vertical-align: top;}
+.stepWrap ol li.on {    margin-right: 20px;    text-indent: 0;    width: auto;}
+.stepWrap ol li.on:before {    background: #000;    color: #fff;    border-color: #000;}
+.stepWrap ol li {    text-indent: -9999px;    position: relative;    display: inline-block;    padding: 0 0 1px 50px;    box-sizing: content-box;}
+.stepWrap ol li:before {    content: counter(section);    counter-increment: section;    display: inline-block;    position: absolute;    top: 0;    left: 0;    width: 40px;    height: 40px;    line-height: 37px;    color: #9b9fa8;    font-size: 20px;    border: 1px solid #9b9fa8;    border-radius: 40px;    text-align: center;    text-indent: 0;    box-sizing: border-box;    z-index: 2;    background: #fff;    font-family: gothamL;}
+em, address {    font-style: normal;}
+.stepWrap ol li em {text-indent: -9999px;overflow: hidden;white-space: nowrap;word-wrap: normal;font-size: 22px; font-weight:300;}
+.stepWrap ol li.on:after {content: '';display: inline-block;width: 50px;height: 1px;background: #aaa;margin-left: 20px;vertical-align: middle;}
+.selResult .inner {padding: 42px 0 42px 0;}
+.selResult .infoArea:after {    content: '';    display: block;    clear: both;}
+.inner {position: relative;width: 1400px;margin: 0 auto;padding-bottom: 180px;}
+.selResult .infoArea dl dt {font-size: 15px;padding-bottom: 5px; letter-spacing:2px; font-weight:500;}
+.selResult .infoArea dl dd {font-size: 20px; font-weight:300;}
+.selResult .infoArea dl dd span{font-weight:300;}
+.selResult .infoArea {    position: relative;}
+.selResult .infoArea dl.dlType01 {    padding-right: 150px;}
+.selResult .infoArea dl {    float: left;}
+.selResult .infoArea dl.dlType02 {    padding-right: 150px;}
+.selResult .infoArea dl {float: left;}
+.selResult .infoArea dl.dlType02 dd span:before {    content: '';    display: inline-block;    position: relative;    top: 2px;    width: 1px;    height: 18px;    background: #ccc;    margin: 0 15px;}
+.selResult .infoArea dl.dlType03 {    text-align: center;    padding-right: 100px;}
+.roomContainer .roomList > li {border-bottom: 1px solid #ccc;padding: 71px 0;}
+.noData .txt:before {content: ''; display: block; width: 3px; height: 45px; margin: 0 auto 30px; background: url(../img/btn_icon/ico_nodata.gif) no-repeat 0 0;}
+
+
+.toggleList > li {position: relative;}
+.noData {text-align: center; padding: 130px 0 !important; width: 100% !important; font-size: 16px;}
+.roomContainer .roomIntro {    position: relative;    padding-left: 585px;    min-height: 352px;}
+.roomContainer .roomIntro .thum {    position: absolute;    left: 0;    top: 0;}
+.roomContainer .roomIntro .thum img {    width: 508px;}
+img, fieldset, iframe {    border: 0;    vertical-align: top;}
+.roomContainer .roomIntro .roomName {display: block;font-size: 40px;padding-top: 25px;margin-bottom: 14px;font-family: 'Playfair Display SC';font-weight: 500;line-height: 1;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.roomContainer .roomIntro .roomBenefit { display: -webkit-box;max-height: 60px;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;-webkit-box-orient: vertical; font-weight:300;}
+.roomContainer .roomIntro .btnView {    margin-top: 10px;}
+.roomContainer .roomIntro .priceWrap {    position: absolute;    left: 585px;    bottom: 25px;}
+.roomContainer .roomIntro .priceWrap .price { font-size: 40px; font-feature-settings: 'lnum','pnum';}
+.roomContainer .roomIntro .priceWrap > * {  display: block;}
+.roomContainer .roomIntro .priceWrap .price em { display: inline-block; vertical-align: 6px; font-size: 24px; letter-spacing: -1px; margin-left: 3px;}
+.roomContainer .roomIntro .priceWrap .day {font-size: 16px; letter-spacing: -1px;}
+.roomContainer .btnRsv {position: absolute; right: 0; bottom: 0; background: #000; color: #fff; padding: 13px 0; width: 150px;}
+.roomContainer .btnRsv2 {position: absolute; right: 160px; bottom: 0; background: #fff; color: #000; padding: 13px 0; width: 150px;}
+.roomContainer .roomIntro .btnView .icoArr { font-size: 14px; min-width: auto; padding: 0;}
+.icoArr { position: relative; padding-right: 17px; background: transparent;}
+.btnS {display: inline-block; min-width: 68px; font-size: 15px; border: 0; vertical-align: top;}
+.roomContainer .roomIntro .btnView .icoArr:after {content: ''; display: block; width: 100%; height: 1px; background: #000; transform: inherit; top: inherit;}
+.btnSC {position: relative;display: inline-block;text-align: center;vertical-align: middle;box-sizing: border-box;color: #000;border: 1px solid #000;background: #fff; transition: color 0.5s ease-in-out;overflow: hidden;z-index: 1;font-family: gothamL, notokrL;}
+
+/*라이트박스*/
+#layerPopup{display:none; position:fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5); z-index:100;}
+#layerPopup .layerContainer{position:fixed; top:50%; left:50%; transform: translate(-50%, -50%); background:#fff; padding:50px 25px 60px 30px; width:1080px;}
+#layerPopup .layerContents{}
+#layerPopup .title{font-size:34px; font-weight:500; text-align:center; margin-bottom:30px;text-transform: uppercase;}
+#layerPopup .scrollWrap{position: relative;height:560px; overflow-y:scroll;}
+#layerPopup .scrollWrap .designScroll{height:100%; }
+#layerPopup .designScroll .contBox{width:90%; margin:0 auto 50px;}
+#layerPopup .designScroll .contBox .txtGuide{margin-top:10px; color:#888; font-size:16px; font-weight:300;}
+#layerPopup .designScroll .contBox .titDep2{font-size:24px; font-weight:500; margin-bottom: 25px;}
+
+#layerPopup .scrollWrap::-webkit-scrollbar { width: 5px; } /* 스크롤 바 */
+#layerPopup .scrollWrap::-webkit-scrollbar-thumb { background: #aaa; border-radius:10px; } /* 실질적 스크롤 바 */
+#layerPopup .scrollWrap::-webkit-scrollbar-thumb:hover { background: #404040; } /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+#layerPopup .scrollWrap::-webkit-scrollbar-thumb:active { background: #808080; } /* 실질적 스크롤 바를 클릭할 때 */
+#layerPopup .scrollWrap::-webkit-scrollbar-button { display: none; } /* 스크롤 바 상 하단 버튼 */
+
+#layerPopup .contBox1 img{width:100%;}
+
+#layerPopup .contBox2 li{width:33.33%; float:left;}
+#layerPopup .contBox2 li:nth-child(3n+1) {clear: left;}
+#layerPopup .contBox2 li:nth-child(4),#layerPopup .contBox2 li:nth-child(5),#layerPopup .contBox2 li:nth-child(6) {margin-top:20px;}
+#layerPopup .contBox2 dt{margin-bottom:5px; font-size:15px; text-transform: uppercase; font-weight:500;}
+#layerPopup .contBox2 dd{padding-right:30px; font-size:17px; font-weight:300; word-break:keep-all;}
+#layerPopup .contBox2 li:nth-child(3) dd:after{display:inline-block; content:'㎡';}
+
+.tabType01{position: relative; display: table; width: 100%; table-layout: fixed;}
+.tabType01 li{display: table-cell; position: relative; width:25%; border:solid #aaa; border-width:1px 0 0 1px;}
+.tabType01 li:after {content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: #000;}
+.tabType01 li:first-child{border-left:1px solid #aaa; border-right:0;}
+.tabType01 li:last-child{border-right:1px solid #aaa;}
+.tabType01 li.on { z-index: 10; border: 1px solid #000; border-bottom: 0;}
+.tabType01 li.on:after {background: #fff;}
+.tabType01 li.on+li{border-left:0;}
+.tabType01 li.on a {color: #000;}
+.tabType01 li:first-child.on a{margin-left:0;}
+.tabType01 a{display:block; height:60px; line-height:60px; color:#666; text-align:center; font-size:20px; font-weight:300;}
+
+#layerPopup .contBox3 .tabCont{display:none;}
+.tabCont .tabRoomInfo{padding: 26px 40px 30px; background: #f9f9f9; margin: 22px 0 35px;}
+.tabCont .tabRoomInfo:last-of-type{ margin-bottom: 14px;}
+.tabRoomInfo li { float: left; width: 33.33%; padding: 7px 0 0 60px; font-size: 18px;}
+.tabRoomInfo li:nth-child(3n+1) {padding-left: 0;}
+
+.packageCont22 {margin-bottom: 0; border-top: 1px solid #000; border-bottom: 1px solid #ccc;}
+.packageCont22 > li {padding: 46px 0 60px;border-bottom: 1px solid #ccc;}
+.packageCont22 > li:last-child{border-bottom:0;}
+.packageCont22 li > dl{position: relative; padding-left: 0; min-height: auto;}
+.packageCont22 li > dl dt{font-size:30px; font-weight:400; line-height:1.2; padding-bottom:15px;}
+.packageCont22 li > dl dd.txtArea > .txt{font-size:18px; font-weight:300;}
+.packageCont22 li .sInfo {display: table; padding-right: 100px;}
+.layerPop .packageCont22 li > dl dd.txtArea > .txt + .sInfo { margin-top: 33px;}
+.packageCont22 li .sInfo li {display: table-row; margin-bottom: 15px; font-size:17px; font-weight:500;}
+.packageCont22 li .sInfo .tit, .packageCont22 li .sInfo .txt {display: table-cell; line-height: 1.8;}
+
+.packageCont22 .txtGuide li {color: #888; font-size: 16px; letter-spacing: -.01em;}
+
+#layerPopup .btnClose {overflow: hidden; text-indent: -9999px; position: absolute; top: 12px; right: 13px; width: 50px; height: 50px; background: url(../img/btn_icon/btn_close_25x25.png) no-repeat 50% 50%; z-index: 999;}
+
+/*비교함*/
+.comparison {/* display: none; */ position: fixed; left: 0; right: 0; bottom: 0; background: #807f6c; z-index: 99;}
+.comparison .btnArea {text-align:center; margin: 0; background: #72715c;}
+.comparison .btnArea .btnComp {font-size: 16px; color: #fff; height: 50px; line-height: 50px;}
+.comparison .btnArea .btnComp:after {content: ''; display: inline-block; vertical-align: middle; margin-left: 15px; width: 11px; height: 7px; background: url(../img/btn_icon/ico_comparison.png) no-repeat -11px 0;}
+.comparison .btnArea .btnComp.on:after {background-position: 0 0;}
+.comparison .compCont {display: table; position: relative; width: 1400px; margin: 0 auto;}
+.comparison .compInner {padding: 40px 0;}
+.comparison .compList {display: table-cell; width: 1050px;}
+.comparison .compList > li {display: table-cell; vertical-align: top; position: relative; width: 350px; border-left: 1px solid #666654;}
+.comparison .compList > li:last-child {border-right: 1px solid #666654;}
+.comparison .compList > li .compWrap {position: relative;width: 220px; margin: 0 auto;color: #fff; padding-top: 152px;}
+.comparison .compList > li .compWrap .txt {font-size: 15px; color: #d9d9d3; padding-top: 10px;}
+.comparison .compList > li .compWrap .thum {position: absolute; left: 50%; top: 0; margin-left: -110px; width: 220px; height: 152px; overflow: hidden;}
+.comparison .compList > li .compWrap .thum img{width:100%;}
+.comparison .compList > li .compWrap.noCont .thum:before {content: ''; display: block; position: absolute; left: 0; top: 0; z-index: -1; width: 220px; height: 152px; background: url(../img/Room/bg_comparison.png) no-repeat 0 0;}
+.comparison .btnWrap {display: table-cell; width: 349px; text-align: left; vertical-align: middle;border-right: 1px solid #666654; padding: 0 93px;}
+.comparison .compList > li .btnDel{position: absolute; right: 64px; top: 0; width: 32px; height: 32px; overflow: hidden;}
+.comparison .compList > li .btnDel:before { content: ''; display: block; width: 32px; height: 32px; background: url(../img/btn_icon/btn_del.gif) no-repeat 0 0;}
+
+.btnM {min-width: 162px; height: 50px; padding: 0 25px; line-height: 48px; font-size: 17px; letter-spacing: -.01em;}
+
+.active {background: #000 !important; color: #fff !important;}
+.active:hover {color: #000 !important;}
+.comparison .btnWrap .btnSC {display: block; margin: 0 auto 5px;}
+.active:before { content: "";  position: absolute; top: 0; left: -150%; background: #fff; width: 130%; height: 100%; 
+	-webkit-transform: skewX(-16deg); -moz-transform: skewX(-16deg); -o-transform: skewX(-16deg); -ms-transform: skewX(-16deg); transform: skewX(-16deg);
+    transition: all 0.5s ease-in-out;  z-index: -1;
+}
+.active:hover:before {left: -10%; transform: skewX(-16deg); -webkit-transform: skewX(-16deg); -ms-transform: skewX(-16deg);}
+.comparison .btnWrap .txtGuide {position: relative; display: inline-block; color: #d9d9d3; font-size: 16px; padding-left: 16px; font-weight:300;letter-spacing: -.01em;}
+.comparison .btnWrap .txtGuide:before{content: '＊'; position: absolute; left: 0; top: 0;font-size:15px; font-weight:600;}
+
+/*비교하기 팝업*/
+#layerPop1{display:none; position:fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5);z-index: 999999;}
+.layerPop .layerCont {position: fixed;padding: 43px 70px 70px; background: #fff; z-index: 999999;}
+.compTit {font-size:34px; line-heihgt:1.32; font-weight:400; text-align: center; margin-bottom: 32px; letter-spacing: -.025em; text-transform: uppercase;}
+.compLayer .compList02 li {float: left; width: 280px;}
+.compLayer .compList02 li+li {margin-left: 40px;}
+.compLayer .compList02 li > dl {position: relative; width: 280px;}
+.compLayer .compList02 li > dl .tit {font-size: 20px; padding-top: 210px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.compLayer .compList02 li > dl .thum {position: absolute; left: 0; top: 0; width: 280px;}
+.compLayer .compList02 li > dl .thum img {width: 100%;}
+.compLayer .compList02 li > dl .txt {font-size: 16px; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-weight:300;}
+.compLayer .compList02 li > dl .price {font-size: 25px; margin-bottom:20px;}
+.layerPop .btnClose {overflow: hidden; text-indent: -9999px; position: absolute; top: 12px; right: 13px; width: 50px; height: 50px; background: url(../img/btn_icon/btn_close_25x25.png) no-repeat 50% 50%; z-index: 999;}
+.compLayer .btnRsv {background: #000; color: #fff; padding: 5px 0; width: 100%;}
